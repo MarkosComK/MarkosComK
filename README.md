@@ -1,7 +1,7 @@
 ### Hi there 👋
  <div>
   <a href="https://github.com/MarkosComK">
-  <img height="180em" padding="50px" src="https://github-readme-stats.vercel.app/api?username=MarkosComK&show_icons=true&theme=graywhite&include_all_commits=true&count_private=true"/>
+  <img height="180em" padding="180cm" src="https://github-readme-stats.vercel.app/api?username=MarkosComK&show_icons=true&theme=graywhite&include_all_commits=true&count_private=true"/>
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MarkosComK&layout=compact&langs_count=7&theme=graywhite"/>
 </div>
 <div style="display: inline_block"><br>
