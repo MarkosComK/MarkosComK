@@ -1,4 +1,4 @@
-### Hi there 👋
+### Oi eu sou o Markos 👋
  <div>
   <a href="https://github.com/MarkosComK">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=MarkosComK&show_icons=true&theme=graywhite&include_all_commits=true&count_private=true"/>
@@ -17,4 +17,5 @@
  <a href = "mailto:markoscomks@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank" ></a>
 </div>
 
-![Snake animation](https://github.com/MarkosComK/MarkosComK/blob/output/github-contribution-grid-snake.svg)
+ [//]: # "Comment"
+  ![Snake animation](https://github.com/MarkosComK/MarkosComK/blob/output/github-contribution-grid-snake.svg)
