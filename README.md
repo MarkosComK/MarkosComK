@@ -12,7 +12,7 @@
   </a> 
 </p>
 <p>💧 Remember to drink water 💧</p>
-<img align="right" width=430 src="https://media.giphy.com/media/Dh5q0sShxgp13DwrvG/giphy.gif" />
+<img align="right" width=400 src="https://media.giphy.com/media/Dh5q0sShxgp13DwrvG/giphy.gif" />
 <h2>⚡️ A Few Quick Facts</h2>
 <ul>
   <li>🔭 I’m currently working on <a href="https://github.com/MarkosComK/portfolio-react">My portfolio</a>.</li>
@@ -20,18 +20,28 @@
   <li>👨‍💻 Most of my projects are available on <a href="https://github.com/MarkosComK">Github</a>.</li>
   <li>💬 Ping me about <strong>React, JS, art, and any tech stuff</strong>.</li>
   <li>📙 Check out my <a href="#">resume(coming)</a>.</li>
-  <li>🎉 Fun Fact: I love drawn people and play instruments。</li>
 </ul>
 
-<h2>🚀 Some Tools I Use</h2>
-<p align="left">
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="25" height="25" />
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain.svg" alt="bootstrap" width="25" height="25" />
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="25" height="25" />
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="25" height="25" />
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="25" height="25" />
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original-wordmark.svg" alt="python" width="25" height="25" />
-</p>
+<br>
+<h2>🚀 Some things about me</h2>
+<br>
+<br>
+
+```javascript
+const Markos = {
+    code: ["Javascript", "Typescript", "Python"],
+    askMeAbout: ["web dev", "tech", "app dev", "photography", "art"],
+    technologies: {
+        frontEnd: {
+            technologies: ["HTML", "CSS", "SASS", "JS", "React", "Typescript", "Redux"],
+        },
+        misc: ["styled-components", "tailwind", "GIT"]
+    },
+    architecture: ["Progressive web applications", "Single page applications"],
+    currentFocus: "My personal Portfolio",
+    funFact: "I love drawn people and play instruments"
+};
+```
 <br>
 <br>
 <p><img src="https://visitor-badge.glitch.me/badge?page_id=markoscomk.markoscomk" alt="visitors"></p>
