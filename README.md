@@ -33,7 +33,7 @@ const Markos = {
     askMeAbout: ["web dev", "tech", "app dev", "photography", "art"],
     technologies: {
         frontEnd: {
-            technologies: ["HTML", "CSS", "SASS", "JS", "React", "Typescript", "Redux"],
+            technologies: ["C", "Shell", "HTML", "CSS", "SASS", "JS", "React", "Typescript", "Redux"],
         },
         misc: ["styled-components", "tailwind", "GIT"]
     },
