@@ -39,7 +39,7 @@ const Markos = {
         misc: ["styled-components", "tailwind", "GIT"]
     },
     architecture: ["Progressive web applications", "Single page applications"],
-    currentFocus: "Piscine 42School",
+    currentFocus: "Common-Core 42School",
     funFact: "I love drawn people and play instruments"
 };
 ```
