@@ -34,11 +34,11 @@ const Markos = {
     askMeAbout: ["web dev", "tech", "app dev", "photography", "art"],
     technologies: {
         frontEnd: {
-            technologies: ["HTML", "CSS", "SASS", "JS", "React", "Typescript", "Redux"],
+            technologies: ["HTML", "CSS", "SASS", "JS", "React", "Typescript", "Redux"]
         },
         back-end: {
             technologies: ["C", "Shell"]
-        }
+        },
         misc: ["styled-components", "tailwind", "GIT"]
     },
     architecture: ["Progressive web applications", "Single page applications"],
