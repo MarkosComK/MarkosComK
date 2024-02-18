@@ -1,5 +1,5 @@
 <h2>Hey 👋, I'm <a href="https://markoscomk.netlify.app">Markos</a></h2>
-<p>I'm currently a clerk at <strong>Casa Guedes</a></strong> and formerly a <strong>waiter</strong>.  Based in Porto i am working on some side projects, learning a couple new things, and trying to conquer the world as Kratos against his enemyes</p>
+<p>I'm currently a waiter at <strong>Casa Guedes</a></strong>.  Based in Porto i am working on some side projects, learning a couple new things, and trying to conquer the world as Kratos against his enemyes</p>
 <p>
   <a href="https://markos.click">
     <img src="https://img.shields.io/badge/MarkosComK-0022B5?style=for-the-badge&logoColor=white" alt="Website Badge">
