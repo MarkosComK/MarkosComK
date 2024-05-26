@@ -6,9 +6,19 @@
   width: 100%;
   height: 200px;
 }
+
 .main{
   margin: 0 80px 0 80px;
 }
+
 .main h1{
   color: white;
+}
+
+.ul{
+  display: flex;
+}
+
+.link{
+  text-decoration: none;
 }

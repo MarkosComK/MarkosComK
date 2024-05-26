@@ -6,14 +6,20 @@ export default function home() {
     <main className={styles.main}>
       <nav className={styles.nav}>
         <div>Dir / dir</div>
-        <ul>
-          <li>
-            <Link href="/misc">mist page</Link>
-          </li>
-          <li>
-            <Link href="/work">work here</Link>
-          </li>
-        </ul>
+        <div>
+          <div>May 26 2024</div>
+          <ul className={styles.ul}>
+            <li className={styles.left}>
+              <Link href="/misc" className={styles.link}>◄</Link>
+            </li>
+            <li>
+              <span>Chanel 00</span>
+            </li>
+            <li className={styles.right}>
+              <Link href="/work" className={styles.link}>►</Link>
+            </li>
+          </ul>
+        </div>
       </nav>
       <h1>home page</h1>
     </main>
