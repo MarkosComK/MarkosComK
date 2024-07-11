@@ -23,14 +23,17 @@
 }
 
 @layer components {
-  .custom-hover:hover  {
+  .custom-hover:hover {
     @apply bg-orange;
     @apply transition-all;
-    @apply duration-300;
+    @apply duration-500;
     @apply ease-in-out;
   }
   .open {
-    @apply h-screen w-screen z-20 absolute !important;
+    @apply h-screen w-screen z-20 absolute;
+  }
+  .close {
+    @apply h-1/2;
   }
 }
 
