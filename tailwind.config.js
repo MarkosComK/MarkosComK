@@ -4,7 +4,9 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      
+    },
     colors: {
       'charcoal': '#014040',
       'green': '#02735E',

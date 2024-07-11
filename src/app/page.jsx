@@ -1,12 +1,22 @@
-import Link from "next/link"
+"use client";
+import Link from "next/link";
+import { useState } from "react";
 
 export default function home() {
+  const [screen, setScreen] = useState('close');
+
+  const openScreen = () => {
+    setScreen(true);
+    console.log(screen);
+  }
+
   return (
     <section className="flex h-screen border border-green">
     <div className="h-full w-1/2">
-      <div className="h-1/2 hover:bg-orange border-b border-green">
+      <div className={`${screen} h-1/2 custom-hover border-b border-green`} onClick={() => setScreen('open')}>
         <span>
           <h1 className="p-3">Markos Santos</h1>
+          <p className="pl-3">Developer</p>
         </span>
       </div>
       <p className="h-1/2 hover:bg-orange">Developer</p>

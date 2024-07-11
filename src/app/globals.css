@@ -22,6 +22,18 @@
   }
 }
 
+@layer components {
+  .custom-hover:hover  {
+    @apply bg-orange;
+    @apply transition-all;
+    @apply duration-300;
+    @apply ease-in-out;
+  }
+  .open {
+    @apply h-screen w-screen z-20 absolute !important;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
