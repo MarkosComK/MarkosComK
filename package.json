@@ -12,6 +12,7 @@
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
+    "typewriter-effect": "^2.21.0",
     "watch": "^0.13.0"
   },
   "devDependencies": {

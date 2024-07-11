@@ -8,6 +8,7 @@ module.exports = {
       
     },
     colors: {
+      'black': '#000',
       'charcoal': '#014040',
       'green': '#02735E',
       'jade': '#03A678',
