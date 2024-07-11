@@ -13,11 +13,12 @@
   body {
     @apply bg-charcoal;
     @apply text-jade;
+    @apply font-custom;
   }
 
   h1 {
     @apply text-2xl;
-    @apply font-bold
+    @apply tracking-wider;
   }
 }
 

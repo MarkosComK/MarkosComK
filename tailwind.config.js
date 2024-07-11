@@ -12,6 +12,11 @@ module.exports = {
       'orange': '#F27405',
       'brown': '#731702',
     },
+    fontFamily: {
+      'sans': ['Roboto', 'sans-serif'],
+      'serif': ['Merriweather', 'serif'],
+      'custom': ['var(--custom)'],
+    },
   },
   plugins: [],
 }
