@@ -26,8 +26,11 @@
 }
 
 @layer components {
+  .shadow {
+    text-shadow: -1px 1px 2px rgba(0,0,0,0.65);
+  }
   .custom-hover:hover {
-    @apply bg-orange;
+    @apply bg-old;
     @apply transition-all;
     @apply duration-500;
     @apply ease-in-out;
