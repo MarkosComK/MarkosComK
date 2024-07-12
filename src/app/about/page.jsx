@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ContactButton from "../contact/ContactButton";
 import Noise from "../effects/noise";
+import LeftCorner from "../effects/leftcorner";
 
 export default function About({ display, handleDisplay}) {
   return (
@@ -32,7 +33,8 @@ export default function About({ display, handleDisplay}) {
           {/*bg - to add later*/}
           </p>
         </div>
-          <ContactButton screen={display}/>
+        <LeftCorner display={display}/>
+        <ContactButton display={display}/>
       </div>
   );
 }
