@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ContactButton from "../contact/page";
 
 export default function About({ screen, handleScreen}) {
   return (
@@ -31,9 +32,7 @@ export default function About({ screen, handleScreen}) {
           {/*bg - to add later*/}
           </p>
         </div>
-        <dir className={`${screen ? "inline" : "-bottom-6 -right-6" } transition-all duration-500 delay-1000 absolute z-50 bottom-6 right-6`}>
-          contact
-        </dir>
+          <ContactButton screen={screen}/>
       </div>
   );
 }
