@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ContactButton from "../contact/page";
+import ContactButton from "../contact/ContactButton";
 import Noise from "../effects/noise";
 
 export default function About({ screen, handleScreen}) {
