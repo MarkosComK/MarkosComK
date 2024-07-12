@@ -7,11 +7,19 @@ import Cursor from "./effects/cursor";
 import Contact from "./contact/Contact";
 
 export default function home() {
-  const [screen, setScreen] = useState(false);
+  const [aboutDisplay, setAboutDisplay] = useState(false);
+  const [contactDisplay, setContactDisplay] = useState(false);
   const [mousePos, setMousePos] = useState({x: 0, y: 0});
 
-  const handleScreen = () => {
-    setScreen(!screen);
+  function handleDisplay(value) {
+    switch(value){
+      case 1:
+        aboutDisplay ? setAboutDisplay(false) : setAboutDisplay(true);
+        break
+      case 2:
+        contactDisplay ? contactDisplay(false) : setContactDisplay(true);
+        break
+    }
   }
   
   const handleMouse = (e) => {
@@ -23,7 +31,7 @@ export default function home() {
     <Cursor mousePos={mousePos}/>
     <Noise/>
     <div className="h-full w-1/2">
-    <About screen={screen} handleScreen={handleScreen}/>
+    <About display={aboutDisplay} handleDisplay={handleDisplay}/>
     <div className="absolute bottom-0 flex w-screen h-12 items-center justify-start z-20">
       <div className={`${screen ? "ml-6 mb-24" : "-ml-4" } transition-all duration-500 delay-700 w-1 h-24 bg-jade`}></div>
       <div className={`${screen ? "-ml-1" : "-mb-14" } transition-all duration-500 delay-700 w-24 h-1 bg-jade`}></div>
