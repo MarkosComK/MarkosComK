@@ -11,6 +11,10 @@
     @apply cursor-none;
   }
 
+  html {
+    @apply overflow-hidden;
+  }
+
   body {
     @apply bg-charcoal;
     @apply text-jade;
