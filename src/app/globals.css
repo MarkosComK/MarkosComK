@@ -48,7 +48,9 @@
     @apply h-screen w-screen z-20 absolute;
   }
   .close {
-    @apply h-1/2;
+    height: calc(50% - 1px); /* Assuming h-1/2 translates to 50% height */
+    position: absolute;
+    width: calc(50% - 1px);
   }
 
   .noise {
