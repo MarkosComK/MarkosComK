@@ -5,6 +5,7 @@ import { bg } from "./bg";
 import Noise from "./effects/noise";
 import Cursor from "./effects/cursor";
 import Contact from "./contact/Contact";
+import ContactButton from "./contact/ContactButton";
 import LeftCorner from "./effects/leftcorner";
 
 export default function home() {
@@ -12,28 +13,19 @@ export default function home() {
   const [contactDisplay, setContactDisplay] = useState(false);
   const [mousePos, setMousePos] = useState({x: 0, y: 0});
 
-  const handleDisplay = (value) => {
-    switch(value){
-      case 1:
-        setAboutDisplay(!aboutDisplay);
-        break
-      case 2:
-        contactDisplay ? setContactDisplay(false) : setContactDisplay(true);
-        break
-    }
-  }
-  
   const handleMouse = (e) => {
     setMousePos({x: e.clientX, y: e.clientY});
   }
-  
+
   return (
     <section className="flex h-screen border border-green" onMouseMove={handleMouse}>
     <Cursor mousePos={mousePos}/>
     <Noise/>
     <div className="h-full w-1/2">
-    <About display={aboutDisplay} handleDisplay={handleDisplay}/>
-    <Contact display={contactDisplay} handleDisplay={handleDisplay}/>
+    <About display={aboutDisplay} setAboutDisplay={setAboutDisplay}/>
+    <Contact display={contactDisplay} setContactDisplay={setContactDisplay}/>
+    <LeftCorner display={aboutDisplay}/>
+    <ContactButton display={aboutDisplay}/>
     </div>
     <div className="flex flex-col w-1/2 h-full border-l border-green">
       <div className="flex w-full h-1/2 border-b border-green">
