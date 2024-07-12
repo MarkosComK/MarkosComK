@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ContactButton from "../contact/page";
+import Noise from "../effects/noise";
 
 export default function About({ screen, handleScreen}) {
   return (
@@ -18,8 +19,7 @@ export default function About({ screen, handleScreen}) {
         </div>
         <div className={`${screen ? "flex" : "hidden" } absolute top-0 p-20 w-full h-full justify-center`}>
         <div>
-          <div className="lines z-30"></div>
-          <div className="noise"></div>
+          <Noise />
           <p className="relative z-50 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]">
             From tinkering with tech to building beautiful interfaces, I'm <span className="glitch" data-text="Markos">Markos</span> a passionate front-end developer fueled by creativity.  A few years ago, my coding journey began with exploring the inner workings of computers.  But it was web development that truly sparked my passion.  It allows me to combine my artistic sensibilities (honed through digital art and design tools like Photoshop, Illustrator, and Figma) with my programming skills to craft user experiences that are both beautiful and intuitive.
           </p>

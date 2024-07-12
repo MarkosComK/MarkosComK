@@ -2,6 +2,8 @@
 import About from "./about/page";
 import { useRef, useState } from "react";
 import { bg } from "./bg";
+import Noise from "./effects/noise";
+import Cursor from "./effects/cursor";
 
 export default function home() {
   const [screen, setScreen] = useState(false);
@@ -17,11 +19,8 @@ export default function home() {
   
   return (
     <section className="flex h-screen border border-green" onMouseMove={handleMouse}>
-      <div className={`h-6 w-4 absolute z-[100] bg-jade translate-x-3.5`} 
-          style={{left: mousePos.x, top: mousePos.y}}>
-    </div>
-    <div className="lines z-10"></div>
-    <div className="noise"></div>
+    <Cursor mousePos={mousePos}/>
+    <Noise/>
     <div className="h-full w-1/2">
     <About screen={screen} handleScreen={handleScreen}/>
         <div className="absolute bottom-0 flex w-screen h-12 items-center justify-start z-20">
