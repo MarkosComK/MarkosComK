@@ -12,13 +12,13 @@ export default function home() {
   const [contactDisplay, setContactDisplay] = useState(false);
   const [mousePos, setMousePos] = useState({x: 0, y: 0});
 
-  function handleDisplay(value) {
+  const handleDisplay = (value) => {
     switch(value){
       case 1:
-        aboutDisplay ? setAboutDisplay(false) : setAboutDisplay(true);
+        setAboutDisplay(!aboutDisplay);
         break
       case 2:
-        contactDisplay ? contactDisplay(false) : setContactDisplay(true);
+        contactDisplay ? setContactDisplay(false) : setContactDisplay(true);
         break
     }
   }
@@ -33,7 +33,7 @@ export default function home() {
     <Noise/>
     <div className="h-full w-1/2">
     <About display={aboutDisplay} handleDisplay={handleDisplay}/>
-    <Contact />
+    <Contact display={contactDisplay} handleDisplay={handleDisplay}/>
     </div>
     <div className="flex flex-col w-1/2 h-full border-l border-green">
       <div className="flex w-full h-1/2 border-b border-green">
