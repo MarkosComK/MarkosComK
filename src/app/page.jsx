@@ -17,6 +17,11 @@ export default function home() {
     setMousePos({x: e.clientX, y: e.clientY});
   }
 
+  const contactButton = () => {
+    setAboutDisplay(!aboutDisplay);
+    setContactDisplay(!contactDisplay);
+  }
+
   return (
     <section className="flex h-screen border border-green" onMouseMove={handleMouse}>
     <Cursor mousePos={mousePos}/>
@@ -25,7 +30,7 @@ export default function home() {
     <About display={aboutDisplay} setAboutDisplay={setAboutDisplay}/>
     <Contact display={contactDisplay} setContactDisplay={setContactDisplay}/>
     <LeftCorner display={aboutDisplay}/>
-    <ContactButton display={aboutDisplay}/>
+    <ContactButton display={aboutDisplay} setContactDisplay={contactButton}/>
     </div>
     <div className="flex flex-col w-1/2 h-full border-l border-green">
       <div className="flex w-full h-1/2 border-b border-green">
