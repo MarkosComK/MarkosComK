@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import { bg } from "./bg";
 import Noise from "./effects/noise";
 import Cursor from "./effects/cursor";
+import Contact from "./contact/Contact";
 
 export default function home() {
   const [screen, setScreen] = useState(false);
@@ -27,7 +28,7 @@ export default function home() {
       <div className={`${screen ? "ml-6 mb-24" : "-ml-4" } transition-all duration-500 delay-700 w-1 h-24 bg-jade`}></div>
       <div className={`${screen ? "-ml-1" : "-mb-14" } transition-all duration-500 delay-700 w-24 h-1 bg-jade`}></div>
     </div>
-    <p className="h-1/2 custom-hover">Developer</p>
+    <Contact />
     </div>
     <div className="flex flex-col w-1/2 h-full border-l border-green">
       <div className="flex w-full h-1/2 border-b border-green">
