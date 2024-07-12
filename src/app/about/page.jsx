@@ -3,7 +3,7 @@ import ContactButton from "../contact/page";
 
 export default function About({ screen, handleScreen}) {
   return (
-      <div className={`${screen ? "open": "close custom-hover"} bg-charcoal border-b border-green`} onClick={() => handleScreen()}>
+      <div id="About" className={`${screen ? "open": "close custom-hover"} bg-charcoal border-b border-green`} onClick={() => handleScreen()}>
         <span className={`${screen ? "-mt-20" : ""} absolute transition-all duration-500 ease-in-out`}>
           <h1 className="p-3 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]" >Markos Santos</h1>
           <p className="pl-3 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]">Creative Developer</p>
