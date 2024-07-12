@@ -23,11 +23,11 @@ export default function home() {
     <Noise/>
     <div className="h-full w-1/2">
     <About screen={screen} handleScreen={handleScreen}/>
-        <div className="absolute bottom-0 flex w-screen h-12 items-center justify-start z-20">
-          <div className={`${screen ? "ml-6 mb-24" : "-ml-4" } transition-all duration-500 delay-700 w-1 h-24 bg-jade`}></div>
-          <div className={`${screen ? "-ml-1" : "-mb-14" } transition-all duration-500 delay-700 w-24 h-1 bg-jade`}></div>
-        </div>
-      <p className="h-1/2 custom-hover">Developer</p>
+    <div className="absolute bottom-0 flex w-screen h-12 items-center justify-start z-20">
+      <div className={`${screen ? "ml-6 mb-24" : "-ml-4" } transition-all duration-500 delay-700 w-1 h-24 bg-jade`}></div>
+      <div className={`${screen ? "-ml-1" : "-mb-14" } transition-all duration-500 delay-700 w-24 h-1 bg-jade`}></div>
+    </div>
+    <p className="h-1/2 custom-hover">Developer</p>
     </div>
     <div className="flex flex-col w-1/2 h-full border-l border-green">
       <div className="flex w-full h-1/2 border-b border-green">
