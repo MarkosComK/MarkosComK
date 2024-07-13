@@ -7,6 +7,7 @@ import Cursor from "./effects/cursor";
 import Contact from "./contact/Contact";
 import ContactButton from "./contact/ContactButton";
 import LeftCorner from "./effects/leftcorner";
+import Video from "./video/video";
 
 export default function home() {
   const [aboutDisplay, setAboutDisplay] = useState(false);
@@ -36,7 +37,9 @@ export default function home() {
             <About display={aboutDisplay} setAboutDisplay={setAboutDisplay}/>
           </div>
           <div className="border flex items-center justify-center">1</div>
-          <div className="border flex items-center justify-center">2</div>
+          <div className="border flex items-center justify-center">
+            <Video />
+          </div>
           <div className="row-span-2 border w-full h-full lg:row-span-1 lg:col-span-2">
             <Contact display={contactDisplay} setContactDisplay={setContactDisplay}/>
           </div>
