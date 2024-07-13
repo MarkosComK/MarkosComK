@@ -52,6 +52,11 @@
     position: absolute;
     width: calc(50% - 1px);
   }
+  .md-close {
+    height: calc(50% - 1px);
+    position: absolute;
+    width: calc(100% - 1px);
+  }
 
   .noise {
     position: fixed;
