@@ -6,8 +6,6 @@ import LeftCorner from "../effects/leftcorner";
 export default function About({ display, setAboutDisplay}) {
   return (
       <div id="About" className={`${display ? "open": "close custom-hover"} transition-all duration-500 bg-charcoal border-b border-green z-20`} onClick={() => setAboutDisplay(!display)}>
-
-
         <span className={`${display ? "-mt-20" : ""} absolute transition-all duration-500 ease-in-out`}>
           <h1 className="p-3 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]" >Markos Santos</h1>
           <p className="pl-3 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]">Creative Developer</p>
@@ -22,7 +20,6 @@ export default function About({ display, setAboutDisplay}) {
         </div>
         <div className={`${display ? "flex" : "hidden" } absolute top-0 p-20 w-full h-full justify-center`}>
         <div>
-          <Noise />
           <p className="relative z-50 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]">
             From tinkering with tech to building beautiful interfaces, I'm <span className="glitch" data-text="Markos">Markos</span> a passionate front-end developer fueled by creativity.  A few years ago, my coding journey began with exploring the inner workings of computers.  But it was web development that truly sparked my passion.  It allows me to combine my artistic sensibilities (honed through digital art and design tools like Photoshop, Illustrator, and Figma) with my programming skills to craft user experiences that are both beautiful and intuitive.
           </p>
