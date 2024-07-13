@@ -79,6 +79,7 @@
   }
 
   .noise {
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -97,6 +98,7 @@
     left: 0;
     right: 0;
     bottom: 0;
+    position: sticky;
     pointer-events: none;
       will-change: background-position;
     animation: noise 1s infinite alternate;
@@ -105,6 +107,8 @@
   .lines {
     left: 0;
     top: 0;
+    bottom: 0;
+    right: 0;
     width: 100%;
     height: 100%;
     pointer-events: none;
@@ -126,6 +130,7 @@
     will-change: background, background-size;
     animation: scanlines 0.2s linear infinite;
   }
+
   @keyframes noise {
     0%,
     100% {
