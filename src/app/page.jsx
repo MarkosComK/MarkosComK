@@ -1,7 +1,7 @@
 "use client";
 import About from "./about/page";
 import { useRef, useState } from "react";
-import { bg } from "./bg";
+import { bg } from "./about/bg";
 import Noise from "./effects/noise";
 import Cursor from "./effects/cursor";
 import Contact from "./contact/Contact";

@@ -61,6 +61,16 @@
     width: calc(100% - 1px);
   }
 
+  .profile {
+    font-size: 3px;
+  }
+  .circular-text { 
+    width: 305px; 
+    height: 305px; 
+    shape-outside: circle(50% at 50% 50%); 
+    clip-path: circle(50% at 50% 50%); 
+  }
+
   .noise {
     position: fixed;
     top: 0;

@@ -2,6 +2,8 @@ import Image from "next/image";
 import ContactButton from "../contact/ContactButton";
 import Noise from "../effects/noise";
 import LeftCorner from "../effects/leftcorner";
+import { profile } from "./profile";
+import { bg } from "./bg";
 
 export default function About({ display, setAboutDisplay}) {
   return (
@@ -14,9 +16,22 @@ export default function About({ display, setAboutDisplay}) {
         } 
         onClick={() => setAboutDisplay(!display)}
         >
-        <span className={`${display ? "-mt-20" : ""} absolute transition-all duration-500 ease-in-out`}>
+        <span className={`${display ? "-mt-20" : ""} absolute transition-all duration-500 ease-in-out w-full h-full`}>
           <h1 className="p-3 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]" >Markos Santos</h1>
           <p className="pl-3 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]">Creative Developer</p>
+        {display ?
+        <div className="h-screen w-screen border border-black flex items-center justify-center">
+          <div className="absolute text-[6px] text-center w-[2220px] h-[964px] text-black">
+              {bg}
+          </div>
+        </div>
+        : 
+        <div className="w-full h-full flex items-center justify-center -translate-y-16">
+          <p className="profile border rounded-full circular-text">
+            {profile}
+          </p>
+        </div>
+        }
         </span>
         <div className="flex w-screen h-12 items-center justify-end">
           <Image className={`${display ? "m-4" : "-mt-24" } transition-all duration-500 delay-500 z-50`} src={"/camera-cam.gif"} width={50} height={50}/>
