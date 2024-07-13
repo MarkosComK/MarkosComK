@@ -25,7 +25,10 @@ export default function home() {
   return (
     <div className="overflow-hidden relative">
     <Noise index={30}/>
-      <section className="border border-jade" onMouseMove={handleMouse}>
+      <section 
+      className="border border-jade w-creen h-screen"
+      onMouseMove={handleMouse}>
+        <Cursor mousePos={mousePos} />
       </section>
     </div>
   );
