@@ -17,7 +17,7 @@ export default function About({ display, setAboutDisplay}) {
         onClick={() => setAboutDisplay(!display)}
         >
         <span className={`${display ? "-mt-20" : ""} absolute transition-all duration-500 ease-in-out w-full h-full`}>
-          <h1 className="p-3 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]" >Markos Santos</h1>
+          <h1 className="p-3 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)] ">Markos Santos</h1>
           <p className="pl-3 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]">Creative Developer</p>
         {display ?
         <div className="top-0 fixed h-screen w-screen border border-black flex items-center justify-center">
@@ -45,7 +45,7 @@ export default function About({ display, setAboutDisplay}) {
         <div className={`${display ? "flex" : "hidden" } absolute top-0 px-10 py-20 w-full h-full justify-center`}>
         <div>
           <p className="relative z-50 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]">
-            From tinkering with tech to building beautiful interfaces, I'm <span className="glitch" data-text="Markos">Markos</span> a passionate front-end developer fueled by creativity.  A few years ago, my coding journey began with exploring the inner workings of computers.  But it was web development that truly sparked my passion.  It allows me to combine my artistic sensibilities (honed through digital art and design tools like Photoshop, Illustrator, and Figma) with my programming skills to craft user experiences that are both beautiful and intuitive.
+            From tinkering with tech to building beautiful interfaces, I'm <span className="t-glitch" data-glitch="Markos">Markos</span> a passionate front-end developer fueled by creativity.  A few years ago, my coding journey began with exploring the inner workings of computers.  But it was web development that truly sparked my passion.  It allows me to combine my artistic sensibilities (honed through digital art and design tools like Photoshop, Illustrator, and Figma) with my programming skills to craft user experiences that are both beautiful and intuitive.
           </p>
           <br />
           <p className="relative z-50 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]">

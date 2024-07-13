@@ -130,6 +130,56 @@
     will-change: background, background-size;
     animation: scanlines 0.2s linear infinite;
   }
+    .t-glitch {
+      position: relative;
+      text-decoration: none;
+      color: #03C778;
+    }
+
+    .t-glitch:before,
+    .t-glitch:after {
+      content: attr(data-glitch);
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: -5px;
+      left: 0;
+      height: 100%;
+      opacity: 0.8;
+    }
+
+    .t-glitch:after {
+      color: #f0f;
+      z-index: -2;
+      animation: glitch .45s cubic-bezier(.25, .46, .45, .94) reverse both infinite
+    }
+
+    .t-glitch:before {
+      color: #0ff;
+      z-index: -1;
+      animation: glitch .35s  cubic-bezier(.25, .46, .45, .94) both infinite
+    }
+
+    @keyframes glitch {
+      0% {
+        transform: translate(0);
+      }
+      20% {
+        transform: translate(1px, 1px);
+      }
+      40% {
+        transform: translate(-2px, 2px);
+      }
+      60% {
+        transform: translate(1px, 3px);
+      }
+      80% {
+        transform: translate(2px, -1px);
+      }
+      to {
+        transform: translate(0);
+      }
+    }
 
   @keyframes noise {
     0%,
