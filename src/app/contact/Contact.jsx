@@ -2,7 +2,7 @@ import Noise from "../effects/noise";
 
 export default function Contact({ display, setContactDisplay }) {
   return (
-    <div className={`${display ? "open border-t" : "close custom-hover"} transition-all duration-500 bottom-0 bg-charcoal`} onClick={() => setContactDisplay(!display)} id="contact">
+    <div className={`${display ? "open border-t border-r border-b" : "close custom-hover border-b"} transition-all duration-500 bottom-0 bg-charcoal`} onClick={() => setContactDisplay(!display)} id="contact">
         <h2 className={`p-4`}>Contact</h2>
         <div className={`${display ? "" : "hidden" } flex flex-col h-[90%] justify-around p-4`}>
             <a

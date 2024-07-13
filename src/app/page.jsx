@@ -39,7 +39,7 @@ export default function home() {
           <div className="border">1</div>
           <div className="border">2</div>
           <div className="row-span-2 border w-full h-full lg:row-span-1 lg:col-span-2">
-            CONTACT
+            <Contact display={contactDisplay} setContactDisplay={setContactDisplay}/>
           </div>
           <div className="border">3</div>
           <div className="border">4</div>

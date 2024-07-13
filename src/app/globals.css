@@ -45,12 +45,15 @@
     @apply ease-in-out;
   }
   .open {
-    @apply h-screen w-screen z-20 absolute;
+    height: calc(100vh - 2px);
+    width: calc(100vw - 2px);
+    z-index: 20;
+    position: absolute;
   }
   .close {
-    height: calc(50% - 1px); /* Assuming h-1/2 translates to 50% height */
+    height: calc(50vh - 2px); /* Assuming h-1/2 translates to 50% height */
     position: absolute;
-    width: calc(50% - 1px);
+    width: calc(50vw - 2px);
   }
   .md-close {
     height: calc(50% - 1px);
