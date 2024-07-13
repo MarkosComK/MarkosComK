@@ -5,7 +5,7 @@ import LeftCorner from "../effects/leftcorner";
 
 export default function About({ display, setAboutDisplay}) {
   return (
-      <div id="About" className={`${display ? "open": "close custom-hover"} transition-all duration-500 bg-charcoal border-b border-green z-20`} onClick={() => setAboutDisplay(!display)}>
+      <div id="About" className={`${display ? "open": "close custom-hover"} transition-all duration-500 bg-charcoal border-r border-b border-jade z-20`} onClick={() => setAboutDisplay(!display)}>
         <span className={`${display ? "-mt-20" : ""} absolute transition-all duration-500 ease-in-out`}>
           <h1 className="p-3 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]" >Markos Santos</h1>
           <p className="pl-3 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]">Creative Developer</p>
