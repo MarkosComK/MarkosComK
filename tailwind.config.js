@@ -5,7 +5,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
+
     },
     colors: {
       'black': '#000',
