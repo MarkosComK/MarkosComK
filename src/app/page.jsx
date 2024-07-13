@@ -23,9 +23,10 @@ export default function home() {
   }
 
   return (
+    <div>
+    <Noise index={30}/>
     <section className="flex h-screen border border-green" onMouseMove={handleMouse}>
     <Cursor mousePos={mousePos}/>
-    <Noise/>
     <div className="h-full w-1/2">
     <About display={aboutDisplay} setAboutDisplay={setAboutDisplay}/>
     <Contact display={contactDisplay} setContactDisplay={setContactDisplay}/>
@@ -43,5 +44,6 @@ export default function home() {
       </div>
     </div>
     </section>
+    </div>
   );
 }
