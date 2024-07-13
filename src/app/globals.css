@@ -29,6 +29,9 @@
     @apply text-2xl;
     @apply tracking-wider relative z-[11];
   }
+  h2 {
+    @apply relative z-[11];
+  }
   p {
     @apply relative z-[11];
   }
