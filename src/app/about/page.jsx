@@ -20,7 +20,7 @@ export default function About({ display, setAboutDisplay}) {
           <h1 className="p-3 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)] ">Markos Santos</h1>
           <p className="pl-3 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]">Creative Developer</p>
         {display ?
-        <div className="top-0 fixed h-screen w-screen border border-black flex items-center justify-center">
+        <div className="top-0 fixed h-svh w-svw border border-black flex items-center justify-center">
           <div className="absolute text-[6px] text-center w-[2220px] h-[964px] text-black">
               {bg}
           </div>

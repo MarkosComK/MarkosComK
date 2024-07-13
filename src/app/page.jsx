@@ -26,14 +26,14 @@ export default function home() {
   return (
     <div className="overflow-hidden relative">
       <section 
-      className="border border-jade w-creen h-screen"
+      className="border border-jade w-svw h-svh"
       onMouseMove={handleMouse}
       >
         <Cursor mousePos={mousePos} />
         <div
           className="grid grid-cols-2 grid-rows-4 w-full h-full lg:grid-cols-4 lg:grid-rows-2"
         >
-          <div className="row-span-2 border w-full h-full lg:row-span-1 lg:col-span-2">
+          <div className="row-span-2 border lg:row-span-1 lg:col-span-2">
             <About display={aboutDisplay} setAboutDisplay={setAboutDisplay}/>
           </div>
           <div className="border flex items-center justify-center">1</div>

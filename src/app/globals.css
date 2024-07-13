@@ -52,15 +52,15 @@
     @apply ease-in-out;
   }
   .open {
-    height: calc(100vh - 2px);
-    width: calc(100vw - 2px);
+    height: calc(100svh - 2px);
+    width: calc(100svw - 2px);
     z-index: 20;
     position: absolute;
   }
   .close {
-    height: calc(50vh - 2px); /* Assuming h-1/2 translates to 50% height */
+    height: calc(50svh - 2px); /* Assuming h-1/2 translates to 50% height */
     position: absolute;
-    width: calc(50vw - 2px);
+    width: calc(50svw - 2px);
   }
   .md-close {
     height: calc(50% - 1px);
