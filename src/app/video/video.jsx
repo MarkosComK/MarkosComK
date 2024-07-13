@@ -20,7 +20,7 @@ export default function Video() {
   return (
     <div className="w-full h-full relative border border-black">
         <div className="absolute z-10 w-full h-full flex justify-between">
-          <div className="mt-10">
+          <div className="">
             <button className="p-5" onClick={() => handleIndex("prev")}>
               HERE
             </button>
