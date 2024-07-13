@@ -44,7 +44,7 @@ export default function home() {
           <div className="border">3</div>
           <div className="border">4</div>
         </div>
-        <ContactButton display={aboutDisplay} setContactDisplay={setContactDisplay}/>
+        <ContactButton display={aboutDisplay} setContactDisplay={contactButton}/>
       </section>
     </div>
   );
