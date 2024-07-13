@@ -24,7 +24,6 @@ export default function home() {
 
   return (
     <div className="overflow-hidden relative">
-    <Noise index={30}/>
       <section 
       className="border border-jade w-creen h-screen"
       onMouseMove={handleMouse}
@@ -36,13 +35,13 @@ export default function home() {
           <div className="row-span-2 border w-full h-full lg:row-span-1 lg:col-span-2">
             <About display={aboutDisplay} setAboutDisplay={setAboutDisplay}/>
           </div>
-          <div className="border">1</div>
-          <div className="border">2</div>
+          <div className="border flex items-center justify-center">1</div>
+          <div className="border flex items-center justify-center">2</div>
           <div className="row-span-2 border w-full h-full lg:row-span-1 lg:col-span-2">
             <Contact display={contactDisplay} setContactDisplay={setContactDisplay}/>
           </div>
-          <div className="border">3</div>
-          <div className="border">4</div>
+          <div className="border flex items-center justify-center">3</div>
+          <div className="border flex items-center justify-center">4</div>
         </div>
         <ContactButton display={aboutDisplay} setContactDisplay={contactButton}/>
         <LeftCorner display={aboutDisplay}/>

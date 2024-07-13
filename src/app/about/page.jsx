@@ -33,6 +33,7 @@ export default function About({ display, setAboutDisplay}) {
         </div>
         }
         </span>
+        <Noise />
         <div className="flex w-screen h-12 items-center justify-end">
           <Image className={`${display ? "m-4" : "-mt-24" } transition-all duration-500 delay-500 z-50`} src={"/camera-cam.gif"} width={50} height={50}/>
         </div>
