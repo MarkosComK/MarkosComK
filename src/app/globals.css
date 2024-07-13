@@ -65,8 +65,8 @@
     font-size: 3px;
   }
   .circular-text { 
-    width: 305px; 
-    height: 305px; 
+    width: 270px; 
+    height: 270px; 
     shape-outside: circle(50% at 50% 50%); 
     clip-path: circle(50% at 50% 50%); 
   }

@@ -27,8 +27,8 @@ export default function About({ display, setAboutDisplay}) {
         </div>
         : 
         <div className="w-full h-full flex items-center justify-center -translate-y-16">
-          <p className="profile border rounded-full circular-text">
-            {profile}
+          <p className="profile rounded-full circular-text absolute">
+            come here later!
           </p>
         </div>
         }
@@ -51,9 +51,6 @@ export default function About({ display, setAboutDisplay}) {
             Front-end development feels like the perfect intersection where my talents can truly shine. It allows me to continuously learn and refine my skills, pushing me towards becoming a well-rounded developer.  If you're looking for a creative and enthusiastic front-end developer to bring your project to life, let's connect!
           </p>
         </div>
-          <p className={`${display ? "inline" : "" } text-[6px] top-1/2 left-1/2 w-[2220px] h-[964px] absolute text-center text-black -translate-x-1/2 -translate-y-1/2 -z-10`}>
-          {/*bg - to add later*/}
-          </p>
         </div>
       </div>
   );
