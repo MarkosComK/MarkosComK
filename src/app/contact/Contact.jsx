@@ -3,8 +3,11 @@ import Noise from "../effects/noise";
 export default function Contact({ display, setContactDisplay }) {
   return (
     <section
-    className={`${display ? "open bg-white dark:bg-gray-900 border-t border-r border-b" : "close custom-hover border-b"} transition-all duration-500 bottom-0 bg-charcoal`} onClick={() => setContactDisplay(!display)} id="contact" >
-          <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md relative z-50">
+    className={`${display ? "open bg-white dark:bg-gray-900 border-t border-r border-b" : "close custom-hover border-b"} transition-all duration-500 bottom-0 bg-charcoal`} id="contact" >
+    <button className={`${display ? "z-30 absolute w-full h-full" : "w-full h-full z-[19] absolute" }`} onClick={() => setContactDisplay(!display)}>
+    </button>
+    <p className={`${display ? "hidden" : "" } p-4`}>contact</p>
+          <div className={`${display ? "" : "hidden" } py-8 lg:py-16 px-4 mx-auto max-w-screen-md relative z-40`}>
               <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
               <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
               <form action="#" className="space-y-8">
