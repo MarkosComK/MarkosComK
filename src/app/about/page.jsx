@@ -53,6 +53,7 @@ export default function About({ display, setAboutDisplay}) {
           </p>
         </div>
         </div>
+        
       </div>
   );
 }
