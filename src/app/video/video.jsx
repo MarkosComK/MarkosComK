@@ -38,7 +38,7 @@ export default function Video() {
             </button>
           </div>
         </div>
-        <video autoplay="" loop muted id="myVideo" src={currentVideo} 
+        <video autoplay="autoplay" loop="loop" muted="muted" defaultMuted="muted" oncontextmenu="return false;"  preload="auto" id="myVideo" src={currentVideo} playsinline=""
         className="relative -z-10 right-0 bottom-0 w-full h-full green-filter object-cover opacity-35">
         </video> 
     <Noise />
