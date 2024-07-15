@@ -1,21 +1,22 @@
 "use client";
 import About from "./about/page";
 import { useRef, useState } from "react";
-import { bg } from "./about/bg";
-import Noise from "./effects/noise";
 import Cursor from "./effects/cursor";
 import Contact from "./contact/Contact";
 import ContactButton from "./contact/ContactButton";
 import LeftCorner from "./effects/leftcorner";
 import Video from "./video/video";
+import Work from "./work/work";
 
 export default function home() {
   const [aboutDisplay, setAboutDisplay] = useState(false);
   const [contactDisplay, setContactDisplay] = useState(false);
+  const [workDisplay, setWorkDisplay] = useState(false);
 
   const [index, setIndex] = useState(1000);
   const [aboutIndex, setAboutIndex] = useState(0);
   const [contactIndex, setContactIndex] = useState(0);
+  const [workIndex, setWorkIndex] = useState(0);
 
   const [mousePos, setMousePos] = useState({x: 0, y: 0});
 
@@ -26,6 +27,11 @@ export default function home() {
 
   const handleContactIndex = () => {
     setContactIndex(index);
+    setIndex(index + 1);
+  }
+
+  const handleWorkIndex = () => {
+    setWorkIndex(index);
     setIndex(index + 1);
   }
 
@@ -51,7 +57,9 @@ export default function home() {
           <div className="row-span-2 border lg:row-span-1 lg:col-span-2">
             <About display={aboutDisplay} setAboutDisplay={setAboutDisplay} index={aboutIndex} handleIndex={handleAboutIndex}/>
           </div>
-          <div className="border flex items-center justify-center">1</div>
+          <div className="border flex items-center justify-center">
+            <Work display={workDisplay} setWorkDisplay={setWorkDisplay} index={workIndex} handleIndex={handleWorkIndex}/>
+          </div>
           <div className="border flex items-center justify-center">
             <Video />
           </div>
