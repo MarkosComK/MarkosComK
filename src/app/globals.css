@@ -54,7 +54,6 @@
   .open {
     height: calc(100svh - 2px);
     width: calc(100svw - 2px);
-    z-index: 20;
     position: absolute;
   }
   .close {

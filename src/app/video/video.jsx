@@ -1,8 +1,7 @@
 import { useState } from "react";
 import Noise from "../effects/noise";
 import { IconContext } from "react-icons";
-import { IoPlaySkipBackSharp } from "react-icons/io5";
-import { IoPlaySkipForwardSharp } from "react-icons/io5";
+import { MdOutlineNavigateNext, MdOutlineNavigateBefore } from "react-icons/md";
 
 export default function Video() {
   const [videos, setVideos] = useState([
@@ -26,14 +25,14 @@ export default function Video() {
           <div className="">
             <button className="p-5" onClick={() => handleIndex("prev")}>
               <IconContext.Provider value={{style: {height: "50px"}}}>
-                <IoPlaySkipBackSharp style={{width: "50px"}}/>
+                <MdOutlineNavigateBefore style={{width: "50px"}}/>
               </IconContext.Provider>
             </button>
           </div>
           <div className="flex items-start">
             <button className="p-5" onClick={() => handleIndex("next")}>
               <IconContext.Provider value={{style: {height: "50px"}}}>
-                <IoPlaySkipForwardSharp style={{width: "50px"}}/>
+                <MdOutlineNavigateNext style={{width: "50px"}}/>
               </IconContext.Provider>
             </button>
           </div>

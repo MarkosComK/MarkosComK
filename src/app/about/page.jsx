@@ -5,7 +5,7 @@ import LeftCorner from "../effects/leftcorner";
 import { profile } from "./profile";
 import { bg } from "./bg";
 
-export default function About({ display, setAboutDisplay}) {
+export default function About({ display, setAboutDisplay, index, handleIndex}) {
   return (
       <div
         id="About"
@@ -13,8 +13,10 @@ export default function About({ display, setAboutDisplay}) {
         {
           `${display ? "open overflow-y-scroll overflow-x-hidden": "close custom-hover"}
           transition-all duration-500 bg-charcoal border-r border-b border-jade z-20`
-        } 
-        onClick={() => setAboutDisplay(!display)}
+        }
+        onMouseEnter={() => handleIndex()}
+        onClick={() => {setAboutDisplay(!display)}}
+        style={{zIndex: index}}
         >
         <span className={`${display ? "-mt-20" : ""} absolute transition-all duration-500 ease-in-out w-full h-full`}>
           <h1 className="p-3 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)] ">Markos Santos</h1>
