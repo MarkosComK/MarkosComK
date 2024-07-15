@@ -7,16 +7,19 @@ import ContactButton from "./contact/ContactButton";
 import LeftCorner from "./effects/leftcorner";
 import Video from "./video/video";
 import Work from "./work/work";
+import Resume from "./resume/Resume";
 
 export default function home() {
   const [aboutDisplay, setAboutDisplay] = useState(false);
   const [contactDisplay, setContactDisplay] = useState(false);
   const [workDisplay, setWorkDisplay] = useState(false);
+  const [resumeDisplay, setResumeDisplay] = useState(false);
 
   const [index, setIndex] = useState(1000);
   const [aboutIndex, setAboutIndex] = useState(0);
   const [contactIndex, setContactIndex] = useState(0);
   const [workIndex, setWorkIndex] = useState(0);
+  const [resumeIndex, setResumeIndex] = useState(0);
 
   const [mousePos, setMousePos] = useState({x: 0, y: 0});
 
@@ -32,6 +35,11 @@ export default function home() {
 
   const handleWorkIndex = () => {
     setWorkIndex(index);
+    setIndex(index + 1);
+  }
+
+  const handleResumeIndex = () => {
+    setResumeIndex(index);
     setIndex(index + 1);
   }
 
@@ -66,8 +74,9 @@ export default function home() {
           <div className="row-span-2 border w-full h-full lg:row-span-1 lg:col-span-2">
             <Contact display={contactDisplay} setContactDisplay={setContactDisplay} index={contactIndex} handleIndex={handleContactIndex}/>
           </div>
-          <div className="border flex items-center justify-center">3</div>
-          <div className="border flex items-center justify-center">4</div>
+          <div className="border flex items-center justify-center row-span-2 w-full h-full lg:row-span-1 col-span-2">
+            <Resume />
+          </div>
         </div>
         <ContactButton display={aboutDisplay} setContactDisplay={contactButton}/>
         <LeftCorner display={aboutDisplay}/>
