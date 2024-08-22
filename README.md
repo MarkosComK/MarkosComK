@@ -47,7 +47,7 @@ const Markos = {
 <br>
 
 <details open>
-<summary style="font-size: 2.5em;"> <b>42 - Piscine</b></summary>
+<summary style="font-size: 4em;"> <b>42 - Piscine</b></summary>
   
 ### Projects
 
@@ -67,7 +67,7 @@ const Markos = {
 </details>
 
 <details open>
-<summary style="font-size: 2.5em;"> <b>42 - Common-core</b></summary>
+<summary style="font-size: 4em;"> <b>42 - Common-core</b></summary>
   
 ### Projects
 
