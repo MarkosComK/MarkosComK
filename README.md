@@ -76,7 +76,3 @@ const Markos = {
 - [Get_next_line](https://github.com/MarkosComK/42-Get_next_line) - Reading content line by line from a file, stdineven a network connection <strong>✅ 125/100</strong>
 - [Push_Swap](https://github.com/MarkosComK/42-push_Swap) - Sorting data on a stack, with a limited set of instructions - <strong>soon</strong>
 </details>
-
-
-<br>
-<br>
