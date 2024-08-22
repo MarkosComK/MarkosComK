@@ -15,7 +15,7 @@
 <img align="right" width=400 src="https://media.giphy.com/media/Dh5q0sShxgp13DwrvG/giphy.gif" />
 <h2>⚡️ A Few Quick Facts</h2>
 <ul>
-  <li>🔭 I’m currently working on <a href="https://github.com/MarkosComK/42-Libft">Libft</a>.</li>
+  <li>🔭 I’m currently working on <a href="https://github.com/MarkosComK/42-Push_swap">Push_swap</a>.</li>
   <li>🧐 Learning about <strong>Linux</strong>, <strong>C</strong>, and a bit of <strong>Shell</strong>.</li>
   <li>👨‍💻 Most of my projects are available on <a href="https://github.com/MarkosComK">Github</a>.</li>
   <li>💬 Ping me about <strong>C, Shell, React, JS, art, and any tech stuff</strong>.</li>
