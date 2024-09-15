@@ -12,7 +12,6 @@
   </a> 
 </p>
 <p>💧 Remember to drink water 💧</p>
-<img align="right" width=300 src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" />
 <h2>⚡️ A Few Quick Facts</h2>
 <ul>
   <li>🔭 I’m currently working on <a href="https://github.com/MarkosComK/42-Philosophers">Philosophers</a>.</li>
@@ -21,6 +20,7 @@
   <li>💬 Ping me about <strong>C, Shell, React, JS, art, and any tech stuff</strong>.</li>
   <li>📙 Check out my <a href="https://markos.click/static/media/markos-resume.6ac6e8fcfcd54eab8910.pdf" target="_blank">resume</a>.</li>
 </ul>
+<img align="right" width=300 src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" />
 
 
 
