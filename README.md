@@ -1,4 +1,4 @@
-<h2>Hey 👋, I'm <a href="https://markos.click">Markos</a></h2>
+<h2>Hey 👋, I'm <a href="https://markos.click" target="_blank">Markos</a></h2>
 <p>I'm currently a clerk at <strong>Casa Guedes</a></strong> and formerly a <strong>waiter</strong>.  Based in Porto i am working on some side projects, learning a couple new things, and trying to conquer the world as Kratos against his enemyes</p>
 <p>
   <a href="https://markos.click">
