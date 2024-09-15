@@ -1,4 +1,4 @@
-<h2>Hey 👋, I'm <a href="https://markoscomk.netlify.app">Markos</a></h2>
+<h2>Hey 👋, I'm <a href="https://markos.click">Markos</a></h2>
 <p>I'm currently a clerk at <strong>Casa Guedes</a></strong> and formerly a <strong>waiter</strong>.  Based in Porto i am working on some side projects, learning a couple new things, and trying to conquer the world as Kratos against his enemyes</p>
 <p>
   <a href="https://markos.click">
@@ -19,7 +19,7 @@
   <li>🧐 Learning about <strong>Linux</strong>, <strong>C</strong>, and a bit of <strong>Shell</strong>.</li>
   <li>👨‍💻 Most of my projects are available on <a href="https://github.com/MarkosComK">Github</a>.</li>
   <li>💬 Ping me about <strong>C, Shell, React, JS, art, and any tech stuff</strong>.</li>
-  <li>📙 Check out my <a href="https://markos.click/static/media/markos-resume.6ac6e8fcfcd54eab8910.pdf">resume</a>.</li>
+  <li>📙 Check out my <a target="_blank" href="https://markos.click/static/media/markos-resume.6ac6e8fcfcd54eab8910.pdf">resume</a>.</li>
 </ul>
 
 
