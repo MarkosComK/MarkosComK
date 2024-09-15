@@ -19,7 +19,7 @@
   <li>🧐 Learning about <strong>Linux</strong>, <strong>C</strong>, and a bit of <strong>Shell</strong>.</li>
   <li>👨‍💻 Most of my projects are available on <a href="https://github.com/MarkosComK">Github</a>.</li>
   <li>💬 Ping me about <strong>C, Shell, React, JS, art, and any tech stuff</strong>.</li>
-  <li>📙 Check out my <a href="https://markos.click/static/media/markos-resume.6ac6e8fcfcd54eab8910.pdf" target="_blank" >resume</a>.</li>
+  <li>📙 Check out my <a href="https://markos.click/static/media/markos-resume.6ac6e8fcfcd54eab8910.pdf" target="_blank">resume</a>.</li>
 </ul>
 
 
