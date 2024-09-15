@@ -20,7 +20,9 @@
   <li>💬 Ping me about <strong>C, Shell, React, JS, art, and any tech stuff</strong>.</li>
   <li>📙 Check out my <a href="https://markos.click/static/media/markos-resume.6ac6e8fcfcd54eab8910.pdf" target="_blank">resume</a>.</li>
 </ul>
-<img align="right" width=300 src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" />
+<p align="center" style="margin: 10px">
+  <img align="right" style="margin: 0 0 10px 10px" width=400 src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" />
+</p>
 
 
 
