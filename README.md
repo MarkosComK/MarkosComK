@@ -12,8 +12,7 @@
   </a> 
 </p>
 <p>💧 Remember to drink water 💧</p>
-<img align="right" width=400 src="https://media.giphy.com/media/Dh5q0sShxgp13DwrvG/giphy.gif" />
-<img align="right" width=400 src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" />
+<img align="right" width=300 src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" />
 <h2>⚡️ A Few Quick Facts</h2>
 <ul>
   <li>🔭 I’m currently working on <a href="https://github.com/MarkosComK/42-Philosophers">Philosophers</a>.</li>
