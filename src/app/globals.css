@@ -16,19 +16,11 @@
 html {
   font-size: 100%;
   line-height: 1.5;
+  background-color: theme('colors.background'); /* Define background color */
+  color: theme('colors.text-primary'); /* Define text color */
 }
 
-body {
-  font-family: 'Inter', sans-serif; /* Default font */
-  color: theme('colors.text-dark'); /* Default text color */
-  background-color: theme('colors.purple-light'); /* Background color */
-}
-
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Merriweather', serif;
-}
-
+/* Headings */
 h1 {
   @apply text-4xl font-bold;
 }
@@ -54,38 +46,28 @@ h6 {
 }
 
 p {
-  @apply mb-4;
+  @apply mb-4 text-text-secondary; /* Apply text color for paragraphs */
 }
 
 a {
-  @apply text-purple-dark hover:text-purple-darkest;
-}
-
-/* Links */
-a {
-  text-decoration: none;
-  color: theme('colors.purple-dark');
+  @apply text-blue-medium; /* Apply color for links */
+  text-decoration: none; /* Remove underline from links */
 }
 
 a:hover {
-  color: theme('colors.purple-darker');
+  @apply text-yellow; /* Color on hover */
 }
 
 /* Buttons */
 button {
-  @apply bg-purple-dark text-white py-2 px-4 rounded;
+  @apply bg-blue-medium text-white py-2 px-4 rounded;
 }
 
 button:hover {
-  @apply bg-purple-darker;
+  @apply bg-blue-light;
 }
 
 /* Containers */
 .container {
   @apply mx-auto px-4;
-}
-
-/* Custom Font Usage */
-.custom-text {
-  font-family: var(--custom), 'Press_Start_2P', cursive;
 }

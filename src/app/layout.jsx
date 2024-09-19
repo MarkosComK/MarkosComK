@@ -1,12 +1,12 @@
-import { Inter, Press_Start_2P} from "next/font/google";
+import { Inter, Press_Start_2P } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const custom_font = Press_Start_2P({
+const pressStart2P = Press_Start_2P({
   weight: ['400'],
   subsets: ["latin"],
-  variable: '--custom',
+  variable: '--font-primary',
 });
 
 export const metadata = {
@@ -17,7 +17,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={custom_font.variable}>{children}</body>
+      <body className={`${pressStart2P.variable} font-press`}>
+        {children}
+      </body>
     </html>
   );
 }

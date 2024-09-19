@@ -6,20 +6,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'purple-darkest': '#2c0735',
-        'purple-darker': '#4e148c',
-        'purple-dark': '#613dc1',
-        'purple-medium': '#858ae3',
-        'purple-light': '#97dffc',
-        'text-primary': '#ffffff',
+        'yellow': '#ECB236',
+        'blue-medium': '#2A4BB3',
+        'blue-light': '#97dffc',
+        'text-primary': '#c4c4c4',
         'text-secondary': '#e0e0e0',
         'text-muted': '#b0b0b0',
         'text-dark': '#333333',
+        'background': '#25252F',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        press: ['var(--font-primary)', 'cursive'],
         serif: ['Merriweather', 'serif'],
-        'press-start': ['Press_Start_2P', 'cursive'],
+        'inter': ['Inter', 'sans-serif'],
       },
     },
   },
