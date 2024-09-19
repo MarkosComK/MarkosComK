@@ -1,3 +1,91 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom global styles */
+
+/* Basic Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+body {
+  font-family: 'Inter', sans-serif; /* Default font */
+  color: theme('colors.text-dark'); /* Default text color */
+  background-color: theme('colors.purple-light'); /* Background color */
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  @apply text-4xl font-bold;
+}
+
+h2 {
+  @apply text-3xl font-bold;
+}
+
+h3 {
+  @apply text-2xl font-bold;
+}
+
+h4 {
+  @apply text-xl font-bold;
+}
+
+h5 {
+  @apply text-lg font-bold;
+}
+
+h6 {
+  @apply text-base font-bold;
+}
+
+p {
+  @apply mb-4;
+}
+
+a {
+  @apply text-purple-dark hover:text-purple-darkest;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: theme('colors.purple-dark');
+}
+
+a:hover {
+  color: theme('colors.purple-darker');
+}
+
+/* Buttons */
+button {
+  @apply bg-purple-dark text-white py-2 px-4 rounded;
+}
+
+button:hover {
+  @apply bg-purple-darker;
+}
+
+/* Containers */
+.container {
+  @apply mx-auto px-4;
+}
+
+/* Custom Font Usage */
+.custom-text {
+  font-family: var(--custom), 'Press_Start_2P', cursive;
+}
