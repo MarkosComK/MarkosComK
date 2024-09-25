@@ -17,8 +17,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${pressStart2P.variable} font-press`}>
-        {children}
+      <body className={`${pressStart2P.variable} font-press flex justify-center items-center`}>
+		<div className="w-screen lg:max-w-screen-xl">
+			{children}
+		</div>
       </body>
     </html>
   );

@@ -50,7 +50,7 @@ p {
 }
 
 a {
-  @apply text-blue-medium; /* Apply color for links */
+  @apply text-dark; /* Apply color for links */
   text-decoration: none; /* Remove underline from links */
 }
 
