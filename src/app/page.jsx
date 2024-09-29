@@ -18,19 +18,19 @@ export default function Home() {
       {/* Grid Layout */}
       <main className="flex-1 grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-6 p-4 lg:p-6">
         {/* Linha 2 */}
-        <div className="bg-blue-medium p-6 rounded-2xl shadow-lg border border-blue-medium col-span-1 h-96 lg:w-[calc(100%+80px)] lg:col-span-1 lg:row-span-2">
+        <div className="bg-blue-medium p-6 rounded-2xl shadow-lg border border-blue-medium col-span-1 h-96 lg:h-full lg:w-[calc(100%+80px)] lg:col-span-1 lg:row-span-2">
           <h2 className="text-2xl font-semibold">Card 1</h2>
           <p>Intro</p>
         </div>
         
         {/* Linha 2, Coluna 3 */}
-        <div className="bg-blue-medium p-6 rounded-2xl shadow-lg border border-blue-medium col-span-1 h-64 lg:w-[calc(100%-40px)] lg:relative lg:left-20 lg:row-span-2">
+        <div className="bg-blue-medium p-6 rounded-2xl shadow-lg border border-blue-medium col-span-1 h-64 lg:h-full lg:w-[calc(100%-40px)] lg:relative lg:left-20 lg:row-span-2">
           <h2 className="text-2xl font-semibold">Card 2</h2>
           <p>Imagem do perfil aqui.</p>
         </div>
         
         {/* Linha 3, Coluna 1 */}
-        <div className="bg-blue-medium p-6 rounded-2xl shadow-lg border border-blue-medium col-span-1 lg:h-[calc(100%+208px)] lg:row-span-2 lg:relative lg:left-10 lg:w-[calc(100%-40px)]">
+        <div className="bg-blue-medium p-6 rounded-2xl shadow-lg border border-blue-medium col-span-1 lg:h-[calc(100%+178px)] lg:row-span-2 lg:relative lg:left-10 lg:w-[calc(100%-40px)]">
           <h2 className="text-2xl font-semibold">Card 3</h2>
           <p>Work</p>
         </div>
@@ -48,7 +48,7 @@ export default function Home() {
         </div>
 
         {/* Linha 3, Coluna 4 */}
-        <div className="bg-blue-medium p-6 rounded-2xl shadow-lg border border-blue-medium col-span-1 lg:w-[calc(100%-40px)] lg:h-[calc(100%-208px)] lg:relative lg:top-52 lg:left-10">
+        <div className="bg-blue-medium p-6 rounded-2xl shadow-lg border border-blue-medium col-span-1 lg:w-[calc(100%-40px)] lg:h-[calc(100%-178px)] lg:relative lg:top-44 lg:left-10">
           <h2 className="text-2xl font-semibold">Card 6</h2>
           <p>Socials</p>
         </div>
