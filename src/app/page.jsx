@@ -24,7 +24,7 @@ export default function Home() {
         </div>
         
         {/* Linha 2, Coluna 3 */}
-        <div className="bg-blue-medium p-6 rounded-2xl shadow-lg border border-blue-medium col-span-2 md:col-span-1 h-64 lg:h-full lg:w-[calc(100%-40px)] lg:relative lg:left-20 lg:row-span-2">
+        <div className="bg-cover bg-center bg-no-repeat bg-[url('/images/marsoare.jpg')] p-6 rounded-2xl shadow-lg border border-blue-medium col-span-2 md:col-span-1 h-64 lg:h-full lg:w-[calc(100%-40px)] lg:relative lg:left-20 lg:row-span-2">
           <h2 className="text-2xl">Card 2</h2>
           <p>Imagem do perfil aqui.</p>
         </div>
