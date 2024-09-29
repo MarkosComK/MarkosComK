@@ -17,7 +17,7 @@ html {
   font-size: 100%;
   line-height: 1.5;
   background-color: theme('colors.background'); /* Define background color */
-  color: theme('colors.text-primary'); /* Define text color */
+  color: theme('colors.primary'); /* Define text color */
 }
 
 /* Headings */
@@ -26,7 +26,7 @@ h1 {
 }
 
 h2 {
-  @apply text-3xl font-bold;
+  @apply text-3xl text-primary;
 }
 
 h3 {
@@ -46,7 +46,7 @@ h6 {
 }
 
 p {
-  @apply mb-4 text-text-secondary; /* Apply text color for paragraphs */
+  @apply mb-4 text-secondary; /* Apply text color for paragraphs */
 }
 
 a {
