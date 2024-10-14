@@ -79,4 +79,5 @@ const Markos = {
 - [Pipex](https://github.com/MarkosComK/42-Pipex) <strong>✅ 125/100</strong>
 - [Push_Swap](https://github.com/MarkosComK/42-push_Swap) - Sorting data on a stack, with a limited set of instructions - <strong>✅ 125/100</strong>
 - [So_Long](https://github.com/MarkosComK/42-So_long) - 2D game made in minilibx  - <strong>✅ 125/100</strong>
+- [Philosophers](https://github.com/MarkosComK/42-Philosophers) - Dijsktra dining problem - <strong>✅ 125/100</strong>
 </details>
