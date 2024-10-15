@@ -43,7 +43,7 @@ const Markos = {
 ```
 <br>
 
-[![My Skills](https://skillicons.dev/icons?i=c,js,ts,md,bash,nvim,vim,vscode,html,css,react,github,git)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=c,js,ts,md,bash,neovim,vim,vscode,html,css,react,github,git)](https://skillicons.dev)
 
 <br>
 <br>
