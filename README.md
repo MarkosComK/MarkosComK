@@ -21,7 +21,7 @@
   <li>📙 Check out my <a href="https://markos.click/static/media/markos-resume.6ac6e8fcfcd54eab8910.pdf" target="_blank">resume</a>.</li>
 </ul>
 <p align="center" style="margin: 10px">
-  <img align="center" style="margin: 10px" width=150 src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" />
+  <img align="left" width="400px" style="margin: 0 10px 10px" src="https://media1.giphy.com/media/Za9KdPfYHcImIMncWk/giphy.gif" />
 </p>
 
 
