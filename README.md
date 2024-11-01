@@ -14,7 +14,7 @@
 <p>💧 Remember to drink water 💧</p>
 <h2>⚡️ A Few Quick Facts</h2>
 <ul>
-  <li>🔭 I’m currently working on <a href="https://github.com/MarkosComK/42-Philosophers">Philosophers</a>.</li>
+  <li>🔭 I’m currently working on <a href="https://github.com/MarkosComK/42-Minishell">Philosophers</a>.</li>
   <li>🧐 Learning about <strong>Linux</strong>, <strong>C</strong>, and a bit of <strong>Shell</strong>.</li>
   <li>👨‍💻 Most of my projects are available on <a href="https://github.com/MarkosComK">Github</a>.</li>
   <li>💬 Ping me about <strong>C, Shell, React, JS, art, and any tech stuff</strong>.</li>
