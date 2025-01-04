@@ -1,5 +1,5 @@
 <h2>Hey 👋, I'm <a href="https://markos.click" target="_blank">Markos</a></h2>
-<p>I'm currently a Technical Support Engineer at <a href="https://dxfeed.com/">dxFeed</a>.  Based in Porto i am working on some side projects, learning a couple new things, and trying to conquer the world as Kratos against his enemyes</p>
+<p>I'm currently a Technical Support Engineer at <a href="https://dxfeed.com/" target="_blank">dxFeed</a>.  Based in Porto i am working on some side projects, learning a couple new things, and trying to conquer the world as Kratos against his enemyes</p>
 <p>
   <a href="https://markos.click">
     <img src="https://img.shields.io/badge/MarkosComK-0022B5?style=for-the-badge&logoColor=white" alt="Website Badge">
