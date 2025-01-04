@@ -1,5 +1,5 @@
 <h2>Hey 👋, I'm <a href="https://markos.click" target="_blank">Markos</a></h2>
-<p>I'm currently a clerk at <strong>Casa Guedes</a></strong> and formerly a <strong>waiter</strong>.  Based in Porto i am working on some side projects, learning a couple new things, and trying to conquer the world as Kratos against his enemyes</p>
+<p>I'm currently a Technical Support Engineer at <strong><a src="https://dxfeed.com/">dxFeed</a></strong>.  Based in Porto i am working on some side projects, learning a couple new things, and trying to conquer the world as Kratos against his enemyes</p>
 <p>
   <a href="https://markos.click">
     <img src="https://img.shields.io/badge/MarkosComK-0022B5?style=for-the-badge&logoColor=white" alt="Website Badge">
@@ -14,7 +14,7 @@
 <p>💧 Remember to drink water 💧</p>
 <h2>⚡️ A Few Quick Facts</h2>
 <ul>
-  <li>🔭 I’m currently working on <a href="https://github.com/MarkosComK/42-Minishell">Philosophers</a>.</li>
+  <li>🔭 I’m currently working on <a href="https://github.com/MarkosComK/42-Minishell">Minishell</a>.</li>
   <li>🧐 Learning about <strong>Linux</strong>, <strong>C</strong>, and a bit of <strong>Shell</strong>.</li>
   <li>👨‍💻 Most of my projects are available on <a href="https://github.com/MarkosComK">Github</a>.</li>
   <li>💬 Ping me about <strong>C, Shell, React, JS, art, and any tech stuff</strong>.</li>
@@ -31,7 +31,7 @@ const Markos = {
     askMeAbout: ["web dev", "tech", "app dev", "photography", "art"],
     technologies: {
       frontEnd: {
-            technologies: ["C", "Shell", "HTML", "CSS", "SASS", "JS", "React", "Typescript", "Redux"],
+            technologies: ["C", "C++", "Shell", "HTML", "CSS", "SASS", "JS", "React", "Typescript", "Redux"],
         },
         misc: ["styled-components", "tailwind", "GIT"]
     },
@@ -42,7 +42,7 @@ const Markos = {
 ```
 <br>
 
-[![My Skills](https://skillicons.dev/icons?i=c,js,ts,md,bash,neovim,vim,vscode,html,css,react,github,git)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=c,cpp,js,ts,md,bash,neovim,vim,vscode,html,css,react,github,git)](https://skillicons.dev)
 
 <br>
 <br>
