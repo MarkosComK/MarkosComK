@@ -14,10 +14,10 @@
 <p>💧 Remember to drink water 💧</p>
 <h2>⚡️ A Few Quick Facts</h2>
 <ul>
-  <li>🔭 I’m currently working on <a href="https://github.com/MarkosComK/42-Minishell">Minishell</a>.</li>
+  <li>🔭 I’m currently working on <a href="https://github.com/SirAlabar/cub3D">Cub3D</a>.</li>
   <li>🧐 Learning about <strong>Linux</strong>, <strong>C</strong>, and a bit of <strong>Shell</strong>.</li>
   <li>👨‍💻 Most of my projects are available on <a href="https://github.com/MarkosComK">Github</a>.</li>
-  <li>💬 Ping me about <strong>C, Shell, React, JS, art, and any tech stuff</strong>.</li>
+  <li>💬 Ping me about <strong>C, Zig, Shell, React, JS, art, and any tech stuff</strong>.</li>
   <li>📙 Check out my <a href="https://markos.click/static/media/markos-resume.6ac6e8fcfcd54eab8910.pdf" target="_blank">resume</a>.</li>
 </ul>
 <p align="center" style="margin: 10px">
