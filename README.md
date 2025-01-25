@@ -47,6 +47,8 @@ const Markos = {
 <br>
 <br>
 
+<div align="center">
+
 # 42 - Piscine
 
 | Project | Score |
@@ -76,3 +78,6 @@ const Markos = {
 | [So_Long](https://github.com/MarkosComK/42-So_long) | 2D game made in minilibx | ✅ 125/100 |
 | [Philosophers](https://github.com/MarkosComK/42-Philosophers) | Dijsktra dining problem | ✅ 125/100 |
 | [Minishell](https://github.com/MarkosComK/42-Minishell) | A shell based on Bash | ✅ 125/100 |
+
+</div>
+
