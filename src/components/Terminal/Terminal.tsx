@@ -45,6 +45,11 @@ const Terminal = () => {
 		setHistory(prev => [...prev, `$ ${cmd}`, output]);
 	};
 
+	const [display, setDisplay] = useState(true);
+	const handleDisplay= () => {
+		setDisplay(!display);
+	};
+
 	const handleSubmit = (e: React.FormEvent) => {
 		e.preventDefault();
 		if (input.trim()) {
@@ -58,6 +63,7 @@ const Terminal = () => {
 		if (inputRef.current) {
 			inputRef.current.focus();
 		}
+		console.log(display);
 	}, []);
 
 	useEffect(() => {
@@ -71,17 +77,23 @@ const Terminal = () => {
 	}
 
 	return (
-		<Term.Wrapper>
-			<Term.Header>terminal</Term.Header>
+		<Term.Wrapper $display={display}>
+			<Term.Header
+				onClick={handleDisplay}
+			>
+				terminal
+			</Term.Header>
 			<Term.Output ref={outputRef}>
 				<Term.HistoryContainer>
 					{history.map((line, i) => (
-					<div key={i}>{line}</div>
+						<div key={i}>{line}</div>
 					))}
 				</Term.HistoryContainer>
 			</Term.Output>
 			<form onSubmit={handleSubmit}>
-				<Term.Input>
+				<Term.Input
+					$display={display}
+				>
 				<Term.Prompt>$</Term.Prompt>
 				<Term.InputField
 					ref={inputRef}
