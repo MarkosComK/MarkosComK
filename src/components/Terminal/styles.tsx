@@ -55,7 +55,7 @@ export const Prompt = styled.span`
   margin-right: 0.5rem;
 `;
 
-export const input = styled.input`
+export const InputField = styled.input`
   background: transparent;
   border: none;
   color: ${({ theme }) => theme.colors.text};
