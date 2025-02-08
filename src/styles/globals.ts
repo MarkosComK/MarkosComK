@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
    color: ${({ theme }) => theme.colors.text};
    font-family: 'Courier New', Courier, monospace;
    line-height: 1.6;
-   padding: 2rem;
+   padding: 0;
  }
 
  a {
