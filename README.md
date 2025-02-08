@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h2>Hey 👋, I'm <a href="https://markoscomk.netlify.app">Markos</a></h2>
+<p>I'm currently a clerk at <strong>Casa Guedes</a></strong> and formerly a <strong>waiter</strong>.  Based in Porto i am working on some side projects, learning a couple new things, and trying to conquer the world as Kratos against his enemyes</p>
+<p>
+  <a href="https://markos.click">
+    <img src="https://img.shields.io/badge/MarkosComK-0022B5?style=for-the-badge&logoColor=white" alt="Website Badge">
+  </a>
+  <a href="https://www.linkedin.com/in/markos-soares/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
+  </a> 
+  <a href="https://instagram.com/markoscomk">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram Badge">
+  </a> 
+</p>
+<p>💧 Remember to drink water 💧</p>
+<img align="right" width=400 src="https://media.giphy.com/media/Dh5q0sShxgp13DwrvG/giphy.gif" />
+<h2>⚡️ A Few Quick Facts</h2>
+<ul>
+  <li>🔭 I’m currently working on <a href="https://github.com/MarkosComK/42-Libft">Libft</a>.</li>
+  <li>🧐 Learning about <strong>Linux</strong>, <strong>C</strong>, and a bit of <strong>Shell</strong>.</li>
+  <li>👨‍💻 Most of my projects are available on <a href="https://github.com/MarkosComK">Github</a>.</li>
+  <li>💬 Ping me about <strong>C, Shell, React, JS, art, and any tech stuff</strong>.</li>
+  <li>📙 Check out my <a href="#">resume (coming)</a>.</li>
+</ul>
 
-## Getting Started
+<br>
+<br>
+<br>
+<br>
+<br>
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```javascript
+const Markos = {
+    code: ["C, Javascript", "Typescript", "Python"],
+    askMeAbout: ["web dev", "tech", "app dev", "photography", "art"],
+    technologies: {
+        frontEnd: {
+            technologies: ["C", "Shell", "HTML", "CSS", "SASS", "JS", "React", "Typescript", "Redux"],
+        },
+        misc: ["styled-components", "tailwind", "GIT"]
+    },
+    architecture: ["Progressive web applications", "Single page applications"],
+    currentFocus: "Piscine 42School",
+    funFact: "I love drawn people and play instruments"
+};
 ```
+<br>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[![My Skills](https://skillicons.dev/icons?i=c,js,ts,md,bash,vim,vscode,html,css,react,github,git)](https://skillicons.dev)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
