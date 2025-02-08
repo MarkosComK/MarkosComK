@@ -21,6 +21,10 @@ export const tion = styled.section`
 	height: 100svh;
 	padding: 0;
 	margin: 0 8px;
+	& div:first-of-type {
+		overflow-y: auto;
+		height: 100%;
+	}
 `;
 
 export const Profile = styled.div`
