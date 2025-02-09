@@ -34,5 +34,6 @@ export const tion = styled.section`
 `;
 
 export const Profile = styled.div`
+	background-color: ${({theme}) => theme.colors.secondary};
 	align-self: start;
 `;

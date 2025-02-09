@@ -2,13 +2,13 @@ export const theme = {
 	colors: {
 		darkGreen: '#2C3930',
 		mediumGreen: '#3F4F44',
-		copper: '#A27B5C',
+		copper: '#554639',
 		cream: '#DCD7C9',
 		iron: '#808080',
 
 		background: '#1D241F',
 		text: '#DCD7C9',
-		secondary: '#A27B5C',
+		secondary: '#554639',
 		accent: '#3F4F44',
 
 		link: '#A27B5C',
