@@ -78,31 +78,35 @@ const Terminal = () => {
 
 	return (
 		<Term.Wrapper $display={display}>
-			<Term.Header
-				onClick={handleDisplay}
-			>
-				terminal
-			</Term.Header>
-			<Term.Output ref={outputRef}>
-				<Term.HistoryContainer>
-					{history.map((line, i) => (
-						<div key={i}>{line}</div>
-					))}
-				</Term.HistoryContainer>
-			</Term.Output>
-			<form onSubmit={handleSubmit}>
-				<Term.Input
-					$display={display}
-				>
-				<Term.Prompt>$</Term.Prompt>
-				<Term.InputField
-					ref={inputRef}
-					type="text"
-					value={input}
-					onChange={(e) => setInput(e.target.value)}
-				/>
-				</Term.Input>
-			</form>
+			<Term.resp>
+				<Term.inal $display={display}>
+					<Term.Header
+						onClick={handleDisplay}
+					>
+						terminal
+					</Term.Header>
+					<Term.Output ref={outputRef}>
+						<Term.HistoryContainer>
+							{history.map((line, i) => (
+								<div key={i}>{line}</div>
+							))}
+						</Term.HistoryContainer>
+					</Term.Output>
+					<form onSubmit={handleSubmit}>
+						<Term.Input
+							$display={display}
+						>
+						<Term.Prompt>$</Term.Prompt>
+						<Term.InputField
+							ref={inputRef}
+							type="text"
+							value={input}
+							onChange={(e) => setInput(e.target.value)}
+						/>
+						</Term.Input>
+					</form>
+				</Term.inal>
+			</Term.resp>
 		</Term.Wrapper>
 	);
 };
