@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
   scrollbar-width: thin;
-  scrollbar-color: #00ff00 ${({ theme }) => theme.colors.background};
+  scrollbar-color: ${({ theme }) => theme.colors.iron} ${({ theme }) => theme.colors.background};
 }
 
 body {
