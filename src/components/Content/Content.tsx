@@ -7,9 +7,9 @@ const Content = () => {
 	return (
 		<Sec.Wrapper>
 			<Sec.tion>
-				<div>
-				<Home />
-				</div>
+				<Sec.main>
+					<Home />
+				</Sec.main>
 				<Sec.Profile>
 					profile
 				</Sec.Profile>

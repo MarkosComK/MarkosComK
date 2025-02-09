@@ -8,6 +8,7 @@ export const theme = {
 
 		background: '#1D241F',
 		text: '#DCD7C9',
+		textCopper: '#362706',
 		secondary: '#554639',
 		accent: '#3F4F44',
 

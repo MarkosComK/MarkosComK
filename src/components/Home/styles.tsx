@@ -1,72 +1,52 @@
+// styles.ts
 import styled from 'styled-components';
 
-export const ProfileSection = styled.section`
+export const Section= styled.section`
 	padding: 1rem;
 	max-width: 1000px;
-	margin: 0 auto;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 0.9rem;
+	line-height: 1.5;
 `;
 
-export const HeadingWrapper = styled.div`
-	margin-bottom: 1rem;
-	h2 {
-		font-size: 1.5rem;
-		color: ${({ theme }) => theme.colors.cream};
-		a {
-			color: ${({ theme }) => theme.colors.copper};
-		}
+export const Heading = styled.h2`
+	margin: 0;
+	padding: 0;
+	font-size: 1.3rem;
+	.comment { color: #666; }
+	.keyword { color: ${({ theme }) => theme.colors.copper}; }
+	.string { color: ${({ theme }) => theme.colors.cream}; }
+	& span {
+		color: ${({theme}) => theme.colors.iron};
 	}
 `;
 
+export const Code = styled.div`
+	color: ${({ theme }) => theme.colors.cream};
+`;
+
+export const Prompt = styled.span`
+	color: ${({ theme }) => theme.colors.copper};
+`;
+
 export const Description = styled.p`
+	font-size: 1.3rem;
 	margin-bottom: 1rem;
 	color: ${({ theme }) => theme.colors.cream};
-	strong {
-		color: ${({ theme }) => theme.colors.copper};
+	span {
+		background-color: ${({ theme }) => theme.colors.textCopper};
+		padding: 0 4px;
 	}
 `;
 
 export const SocialLinks = styled.div`
-	display: flex;
-	gap: 0.5rem;
+	font-size: 1.3rem;
 	margin-bottom: 1rem;
-	flex-wrap: wrap;
 	a {
-		background: ${({ theme }) => theme.colors.mediumGreen};
 		color: ${({ theme }) => theme.colors.cream};
-		padding: 0.25rem 0.5rem;
-		font-size: 0.8rem;
+		text-decoration: underline;
+		text-decoration-color: ${({ theme }) => theme.colors.copper};
+		margin-right: 1rem;
 	}
 `;
 
-export const FactsList = styled.div`
-	display: grid;
-	grid-template-columns: 1fr 400px;
-	gap: 1rem;
-	
-	@media (max-width: 768px) {
-		grid-template-columns: 1fr;
-	}
-	
-	ul {
-		list-style: none;
-		li {
-			margin-bottom: 0.5rem;
-			color: ${({ theme }) => theme.colors.cream};
-			strong {
-				color: ${({ theme }) => theme.colors.copper};
-			}
-			a {
-				color: ${({ theme }) => theme.colors.copper};
-			}
-		}
-	}
-`;
-
-export const CodeBlock = styled.pre`
-	background: ${({ theme }) => theme.colors.mediumGreen};
-	padding: 1rem;
-	color: ${({ theme }) => theme.colors.cream};
-	font-size: 0.8rem;
-	overflow-x: auto;
-	margin: 1rem 0;
-`;

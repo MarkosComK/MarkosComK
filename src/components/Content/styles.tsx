@@ -22,18 +22,17 @@ export const tion = styled.section`
 	padding: 0;
 	margin: 0 8px;
 	font-size: 1.2rem;
-	& div:first-of-type {
-		padding: 12px 16px;
-		background-color: ${({theme}) => theme.colors.mediumGreen};
-		overflow-y: auto;
-		height: 100%;
-	}
-	& div{
-		padding: 12px 16px;
-	}
+`;
+
+export const main = styled.main`
+	padding: 12px 16px;
+	background-color: ${({theme}) => theme.colors.mediumGreen};
+	overflow-y: auto;
+	height: 100%;
 `;
 
 export const Profile = styled.div`
-	background-color: ${({theme}) => theme.colors.secondary};
+	background-color: ${({theme}) => theme.colors.copper};
 	align-self: start;
+	padding: 12px 16px;
 `;
