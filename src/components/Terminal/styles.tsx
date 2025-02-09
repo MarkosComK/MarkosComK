@@ -6,7 +6,7 @@ interface Props {
 
 export const Header = styled.header`
 	text-align: center;
-	border: 1px solid green;
+	border: 1px solid ${({ theme }) => theme.colors.secondary};
 	width: clamp(200px, 110%, 504px);
 	position: relative;
 	top: -18px;
@@ -18,7 +18,8 @@ export const Header = styled.header`
 
 export const Wrapper = styled.div`
 	border-radius: 12px 12px 0 0;
-	border: 1px solid green;
+	border: 1px solid ${({ theme }) => theme.colors.secondary};
+	width: clamp(200px, 110%, 504px);
 	overflow-y: auto;
 	overflow-y: ${({ $display }) => $display ? 'auto' : 'hidden'};
 	overflow-x: hidden;

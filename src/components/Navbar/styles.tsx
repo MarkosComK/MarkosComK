@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
 	width: 100%;
-	height: 50px;
+	height: 80px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -15,14 +15,14 @@ export const Bar = styled.nav`
 	align-items: center;
 	justify-content: space-between;
 	width: clamp(50%, 800px, 100%);
-	height: 50px;
+	height: 80px;
 	padding: 0;
 	margin: 0 8px;
 
 	& div {
 		font-size: 1.2rem;
 		margin-left: 4px;
-		background-color: grey;
+		background-color: ${({theme}) => theme.colors.iron};
 	}
 	& ul {
 		display: flex;
@@ -30,7 +30,7 @@ export const Bar = styled.nav`
 		& li {
 			margin-right: 4px;
 			& span {
-				color: grey;
+				color: ${({theme}) => theme.colors.iron};
 			}
 		}
 	}
