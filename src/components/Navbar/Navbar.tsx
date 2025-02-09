@@ -7,7 +7,7 @@ const Navbar = () => {
 		<Nav.Wrapper>
 			<Nav.Bar>
 				<div>
-					[Markos@comk] $
+					<span>[</span>Markos@comk<span>]</span> $
 				</div>
 				<ul>
 					<li>

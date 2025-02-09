@@ -23,6 +23,9 @@ export const Bar = styled.nav`
 		font-size: 1.2rem;
 		margin-left: 4px;
 		background-color: ${({theme}) => theme.colors.iron};
+		& span {
+			color: ${({theme}) => theme.colors.mediumGreen};
+		}
 	}
 	& ul {
 		display: flex;
