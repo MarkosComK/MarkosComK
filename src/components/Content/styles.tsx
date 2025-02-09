@@ -18,9 +18,10 @@ export const tion = styled.section`
 	grid-template-columns: 4fr 1fr;  /* Splits into 4/5 and 1/5 */
 	gap: 20px;
 	width: clamp(50%, 800px, 100%);
-	height: 100svh;
+	height: 624px;
 	padding: 0;
 	margin: 0 8px;
+		font-size: 1.5rem;
 	& div:first-of-type {
 		overflow-y: auto;
 		height: 100%;

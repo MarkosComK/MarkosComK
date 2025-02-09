@@ -20,6 +20,7 @@ export const Bar = styled.nav`
 	margin: 0 8px;
 
 	& div {
+		font-size: 1.2rem;
 		margin-left: 4px;
 		background-color: grey;
 	}
