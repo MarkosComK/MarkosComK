@@ -26,13 +26,17 @@ export const tion = styled.section`
 
 export const main = styled.main`
 	padding: 12px 16px;
-	background-color: ${({theme}) => theme.colors.mediumGreen};
+	background-color: ${({theme}) => theme.colors.medium};
+	opacity: 0.8;
 	overflow-y: auto;
 	height: 100%;
+	& a {
+		color: ${({theme}) => theme.colors.link};
+	}
 `;
 
 export const Profile = styled.div`
-	background-color: ${({theme}) => theme.colors.copper};
+	background-color: ${({theme}) => theme.colors.medium};
 	align-self: start;
 	padding: 12px 16px;
 `;

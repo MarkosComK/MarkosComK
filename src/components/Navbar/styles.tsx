@@ -22,7 +22,8 @@ export const Bar = styled.nav`
 	& div {
 		font-size: 1.2rem;
 		margin-left: 4px;
-		background-color: ${({theme}) => theme.colors.iron};
+		background-color: ${({theme}) => theme.colors.green};
+		color: ${({theme}) => theme.colors.dark};
 		& span {
 			color: ${({theme}) => theme.colors.mediumGreen};
 		}

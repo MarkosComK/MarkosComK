@@ -21,7 +21,7 @@ export const resp = styled.div`
 export const inal = styled.div`
 	position: relative;
 	border-radius: 8px 8px 0 0;
-	border: 1px solid ${({ theme }) => theme.colors.iron};
+	border: 1px solid ${({ theme }) => theme.colors.medium};
 	overflow-y: ${({ $display }) => $display ? 'auto' : 'hidden'};
 	height: ${({ $display }) => $display ? '400px' : '0px'};
 	overflow-x: hidden;
@@ -35,12 +35,13 @@ export const inal = styled.div`
 
 export const Header = styled.header`
 	text-align: center;
-	border: 1px solid ${({ theme }) => theme.colors.iron};
+	border: 1px solid ${({ theme }) => theme.colors.medium};
 	width: clamp(200px, 110%, 504px);
 	position: relative;
 	top: -18px;
 	left: -18px;
-	background-color: grey;
+	background-color: ${({ theme }) => theme.colors.medium};
+	color: ${({theme}) => theme.colors.green};
 	border-radius: 12px 12px 0 0;
 	cursor: pointer;
 `;
