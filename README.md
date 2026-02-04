@@ -14,7 +14,7 @@
 <p>💧 Remember to drink water 💧</p>
 <h2>⚡️ A Few Quick Facts</h2>
 <ul>
-  <li>🔭 I’m currently working on <a href="https://github.com/SirAlabar/cub3D">Cub3D</a>.</li>
+  <li>🔭 I’m currently working on <a href="https://www.youtube.com/watch?v=h7oqtfgvT64">writing my own blog</a>.</li>
   <li>🧐 Learning about <strong>Linux</strong>, <strong>C</strong>, and a bit of <strong>Shell</strong>.</li>
   <li>👨‍💻 Most of my projects are available on <a href="https://github.com/MarkosComK">Github</a>.</li>
   <li>💬 Ping me about <strong>C, Zig, Shell, React, JS, art, and any tech stuff</strong>.</li>
