@@ -11,8 +11,20 @@
     "SideLeft Main Main Main sideRight";
   height: 100vh;
   width: 100%;
+  max-width: 1560px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.Main     { grid-area: Main; }
-.SideLeft { grid-area: SideLeft; }
-.sideRight{ grid-area: sideRight; }
+.Main {
+  grid-area: Main;
+  margin-top: 6rem;
+}
+.SideLeft {
+  grid-area: SideLeft;
+  margin-top: 6rem;
+}
+.sideRight{
+  grid-area: sideRight;
+  margin-top: 6rem;
+}
