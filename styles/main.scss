@@ -1,4 +1,15 @@
 @forward 'grid';
+@forward 'navbar';
+
+body,
+pre,
+code,
+.SideLeft,
+.Main,
+.sideRight {
+  font-family: 'JetBrains Mono', 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-feature-settings: "liga" 1, "calt" 1;
+}
 
 body {
   margin: 0;

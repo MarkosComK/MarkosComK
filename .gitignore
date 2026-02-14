@@ -1,4 +1,52 @@
+# ────────────────────────────────────────────────
+# Node.js / npm / bun / pnpm
+# ────────────────────────────────────────────────
 node_modules/
-.quartz-cache/
+npm-debug.log
+yarn-error.log
+.pnpm-store/
+bun.lockb
+deno.lock
+
+# ────────────────────────────────────────────────
+# Build output / generated files
+# ────────────────────────────────────────────────
 public/
+dist/
+build/
+out/
+
+# Usually you do NOT commit the generated public folder
+# (people regenerate it on deploy or on CI)
+
+# ────────────────────────────────────────────────
+# Editor / OS files
+# ────────────────────────────────────────────────
 .DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ────────────────────────────────────────────────
+# Logs / temp
+# ────────────────────────────────────────────────
+*.log
+tmp/
+temp/
+
+# ────────────────────────────────────────────────
+# Optional: keep these if you want
+# ────────────────────────────────────────────────
+# content/               ← usually committed (your source notes)
+# styles/                ← committed (your SCSS)
+# js/                    ← committed (your builder scripts)
+# layout.html            ← committed
+# package.json           ← committed
+# public/js/app.js       ← committed (client-side JS)
+
+# If you ever add tests / coverage
+coverage/

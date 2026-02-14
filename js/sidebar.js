@@ -23,23 +23,44 @@ function buildTree(files, contentDir) {
   return tree;
 }
 
-function buildSidebarHtml(node) {
-  let html = '<ul>';
-  Object.keys(node).sort().forEach(key => {
+function buildSidebarHtml(node, basePath = '', level = 0) {
+  let html = '<ul class="sidebar-tree">';
+
+  const keys = Object.keys(node).sort();
+  const numItems = keys.length;
+
+  keys.forEach((key, index) => {
     const item = node[key];
+    const isLastInThisLevel = (index === numItems - 1);
+    const fullPath = basePath ? `${basePath}/${key}` : key;
+
+    // Decide prefix for this item
+    let prefix = '';
+    if (level > 0) {
+      prefix = isLastInThisLevel ? '└─ ' : '├─ ';
+    }
 
     if (item.isFile) {
-      // flat links — we use the slug directly (as discussed earlier)
-      html += `<li><a href="${key}.html">${item.title || key}</a></li>`;
+      html += `<li class="tree-item file-item" data-level="${level}">
+        <span class="tree-prefix">${prefix}</span>
+        <i class="fa-regular fa-file-lines file-icon"></i>
+        <a href="${key}.html">${item.title || key}</a>
+      </li>`;
     } else {
-      // folder
-      html += `<li><strong>${key}</strong>`;
-      if (item.subfolders && Object.keys(item.subfolders).length > 0) {
-        html += buildSidebarHtml(item.subfolders);
-      }
-      html += '</li>';
+      html += `<li class="tree-item folder-item" data-level="${level}">
+        <div class="folder-toggle">
+          <span class="tree-prefix">${prefix}</span>
+          <i class="fa-solid fa-chevron-right toggle-icon"></i>
+          <i class="fa-solid fa-folder folder-icon"></i>
+          <span>${key}</span>
+        </div>
+        <ul class="folder-children">
+          ${buildSidebarHtml(item.subfolders || {}, fullPath, level + 1)}
+        </ul>
+      </li>`;
     }
   });
+
   html += '</ul>';
   return html;
 }
