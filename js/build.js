@@ -4,8 +4,10 @@ const matter = require('gray-matter');
 const { marked } = require('marked');
 
 const config = require('./config');
+const { getAllMarkdownFiles } = require('./files');
+const { buildTree, buildSidebarHtml } = require('./sidebar');
 
-// Configure marked once
+// Configure marked (global for the process)
 marked.setOptions({
   gfm: true,
   breaks: true
@@ -19,71 +21,15 @@ if (!fs.existsSync(config.outputDir)) {
   fs.mkdirSync(config.outputDir, { recursive: true });
 }
 
-// ────────────────────────────────────────────────
-//  Your other functions should be moved to separate files later
-//  For now we keep them here so it still works
-// ────────────────────────────────────────────────
-
-function getAllMarkdownFiles(dir) {
-  let results = [];
-  const list = fs.readdirSync(dir, { withFileTypes: true });
-
-  list.forEach(item => {
-    const fullPath = path.join(dir, item.name);
-    if (item.isDirectory()) {
-      results = results.concat(getAllMarkdownFiles(fullPath));
-    } else if (item.name.endsWith('.md')) {
-      results.push(fullPath);
-    }
-  });
-  return results;
-}
-
-function buildTree(files) {
-  const tree = {};
-  files.forEach(filePath => {
-    const relative = path.relative(config.contentDir, filePath);
-    const parts = relative.split(path.sep);
-    const filename = parts.pop();
-    const slug = filename.replace(/\.md$/, '');
-
-    let current = tree;
-    parts.forEach(folder => {
-      if (!current[folder]) {
-        current[folder] = { subfolders: {} };
-      }
-      current = current[folder].subfolders;
-    });
-    current[slug] = { title: slug, isFile: true };
-  });
-  return tree;
-}
-
-function buildSidebarHtml(node) {
-  let html = '<ul>';
-  Object.keys(node).sort().forEach(key => {
-    const item = node[key];
-    if (item.isFile) {
-      html += `<li><a href="${key}.html">${item.title || key}</a></li>`;
-    } else {
-      html += `<li><strong>${key}</strong>`;
-      html += buildSidebarHtml(item.subfolders || {});
-      html += '</li>';
-    }
-  });
-  html += '</ul>';
-  return html;
-}
-
-// ────────────────────────────────────────────────
-// Main build logic
-// ────────────────────────────────────────────────
-
 function build() {
+  // 1. Find all markdown files
   const mdFiles = getAllMarkdownFiles(config.contentDir);
-  const tree = buildTree(mdFiles);
+
+  // 2. Build sidebar once (shared across all pages)
+  const tree = buildTree(mdFiles, config.contentDir);
   const sidebarHtml = buildSidebarHtml(tree);
 
+  // 3. Generate individual post pages
   mdFiles.forEach(filePath => {
     const content = fs.readFileSync(filePath, 'utf8');
     const { data: fm, content: mdBody } = matter(content);
@@ -104,7 +50,7 @@ function build() {
     console.log(`Generated: ${slug}.html`);
   });
 
-  // Index page
+  // 4. Generate index page
   const indexHtml = layoutTemplate
     .replace(/{{TITLE}}/g, 'My Notes')
     .replace(/{{SIDEBAR}}/g, sidebarHtml)
@@ -116,7 +62,8 @@ function build() {
   fs.writeFileSync(path.join(config.outputDir, 'index.html'), indexHtml);
   console.log('Generated: index.html');
 
-  console.log(`Built ${mdFiles.length} files`);
+  console.log(`\nBuilt ${mdFiles.length} markdown files`);
 }
 
+// Run the build
 build();
