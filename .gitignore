@@ -1,0 +1,50 @@
+# Jekyll build output
+_site/
+
+# Temporary build files
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler / Ruby
+.bundle/
+vendor/bundle/
+Gemfile.lock
+
+# Logs & temp files
+*.log
+jekyll.log
+*.pid
+
+# macOS junk
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows junk
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor / IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Neovim swap / backup files
+*.swp
+*.swo
+*~
+
+# Ruby / gem caches
+.ruby-version
+.ruby-gemset
+
+# Keep your drafts / work-in-progress if you want — but usually ignored
+# _drafts/
+# _includes/custom/
+# _layouts/custom/
+
+# Optional: ignore personal test files
+test/
+playground/
