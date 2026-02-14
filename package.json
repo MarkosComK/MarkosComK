@@ -1,11 +1,14 @@
 {
-  "scripts": {
-    "build": "node build.js",
-    "start": "npx live-server public",
-    "watch": "nodemon --watch content --ext md --exec \"node build.js\"",
-    "dev": "concurrently --kill-others-on-fail \"npm run watch\" \"npm start\"",
-    "dev:all": "concurrently \"npm run watch\" \"npm start\""
-  },
+	"scripts": {
+  "build": "node js/build.js",
+  "build:css": "sass styles/main.scss public/css/style.css --style=expanded",
+  "watch:css": "sass --watch styles/main.scss:public/css/style.css --style=expanded",
+  "build:html": "node js/build.js",
+  "watch:html": "nodemon --watch content --ext md --exec \"node js/build.js\"",
+  "build": "npm run build:css && npm run build:html",
+  "start": "npx live-server public --watch=public",
+  "dev:all": "npm run build && concurrently \"npm run watch:css\" \"npm run watch:html\" \"npm start\""
+},
   "dependencies": {
     "gray-matter": "^4.0.3",
     "marked": "^17.0.2"
@@ -13,6 +16,7 @@
   "devDependencies": {
     "concurrently": "^9.2.1",
     "live-server": "^1.2.2",
-    "nodemon": "^3.1.11"
+    "nodemon": "^3.1.11",
+    "sass": "^1.97.3"
   }
 }
