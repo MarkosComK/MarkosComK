@@ -37,20 +37,19 @@ function buildSidebarHtml(node, basePath = '', level = 0) {
     // Decide prefix for this item
     let prefix = '';
     if (level > 0) {
-      prefix = isLastInThisLevel ? '└─ ' : '├─ ';
+      prefix = isLastInThisLevel ? '└─' : '├─';
     }
 
     if (item.isFile) {
       html += `<li class="tree-item file-item" data-level="${level}">
         <span class="tree-prefix">${prefix}</span>
-        <i class="fa-regular fa-file-lines file-icon"></i>
+	<i class="fa-brands fa-markdown"></i>
         <a href="${key}.html">${item.title || key}</a>
       </li>`;
     } else {
       html += `<li class="tree-item folder-item" data-level="${level}">
         <div class="folder-toggle">
           <span class="tree-prefix">${prefix}</span>
-          <i class="fa-solid fa-chevron-right toggle-icon"></i>
           <i class="fa-solid fa-folder folder-icon"></i>
           <span>${key}</span>
         </div>

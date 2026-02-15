@@ -18,6 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
       folderItem.classList.toggle('open');
       console.log('Toggled folder:', folderItem.querySelector('span')?.textContent); // optional debug
     }
+	  const icon = toggle.querySelector('.folder-icon');
+  if (icon) {
+    icon.classList.toggle('fa-folder');
+    icon.classList.toggle('fa-folder-open');
+  }
   });
 
   // ────────────────────────────────────────────────

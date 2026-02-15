@@ -1,51 +1,60 @@
-.sidebar-tree {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
-  font-size: 0.95rem;
-}
-
-.tree-item {
-  position: relative;
-  margin: 0;
-}
-
-.tree-prefix {
-  display: inline-block;
-  width: 1.8rem;
-  text-align: left;
-  color: #888;
-  user-select: none;
-}
-
 .folder-toggle {
-  display: flex;
-  align-items: center;
   cursor: pointer;
-  padding: 0.35rem 0.5rem;
-  border-radius: 4px;
-
+  text-align: left;
   &:hover {
     background: rgba(100, 150, 255, 0.08);
   }
 }
 
+.SideLeft {
+  > *:nth-child(2) {
+    padding: 0 4rem;
+  }
+}
+.sidebar-tree {
+  list-style: none;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+  font-size: 0.95rem;
+  ul {
+        padding-inline-start: 6px;
+  }
+  .fa-markdown {
+    font-size: 0.8rem;
+  }
+}
+
+.tree-item {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  a {
+    text-decoration: none;
+    color: var(--text-primary);
+  }
+  & .file-item {
+    &:hover {
+      background: rgba(100, 150, 255, 0.08);
+    }
+  }
+}
+
+.tree-prefix {
+  display: inline-block;
+  text-align: left;
+  user-select: none;
+}
+
 .toggle-icon {
-  margin-right: 0.4rem;
   font-size: 0.75rem;
-  color: #777;
   transition: transform 0.2s ease;
 }
 
-.folder-icon {
+.folder-item.open .folder-icon.open {
+  display: inline-block;
 }
 
-.file-icon {
-}
-
-.folder-item.open > .folder-toggle .toggle-icon {
-  transform: rotate(90deg);
+.folder-icon.open {
+  display: none;
 }
 
 .folder-children {
@@ -54,13 +63,16 @@
   display: none;
 }
 
-/* When parent has .open → show it */
 .folder-item.open > .folder-children {
   display: block !important;
 }
 
+.folder-item.open .folder-icon {
+  content: "\f07c";
+}
+
 // Indentation via level (optional, can replace prefix chars)
-.tree-item[data-level="1"] { padding-left: 0.8rem; }
-.tree-item[data-level="2"] { padding-left: 1.6rem; }
-.tree-item[data-level="3"] { padding-left: 2.4rem; }
+//.tree-item[data-level="1"] { padding-left: 0.8rem; }
+//.tree-item[data-level="2"] { padding-left: 1.6rem; }
+//.tree-item[data-level="3"] { padding-left: 2.4rem; }
 // ... add more if you have deep nesting
