@@ -42,33 +42,48 @@ function buildTOC() {
     return;
   }
 
-  const ul = document.createElement('ul');
-  ul.className = 'toc-list';
+// Nested TOC with indentation
+const root = document.createElement('ul');
+let currentLevel = 1;
+let currentList = root;
 
-  headings.forEach((h, i) => {
-    if (!h.id) {
-      const text = h.textContent.trim();
-      h.id = 'toc-' + i + '-' + text
-        .toLowerCase()
-        .replace(/[^a-z0-9\s-]/gi, '')
-        .replace(/\s+/g, '-')
-        .replace(/-+/g, '-');
-    }
+headings.forEach((h, i) => {
+  if (!h.id) {
+    const text = h.textContent.trim();
+    h.id = 'toc-' + i + '-' + text
+      .toLowerCase()
+      .replace(/[^a-z0-9\s-]/gi, '')
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-');
+  }
 
-    const level = parseInt(h.tagName[1]);
-    const li = document.createElement('li');
-    li.dataset.level = level;
+  const level = parseInt(h.tagName[1]);
 
-    const a = document.createElement('a');
-    a.href = '#' + h.id;
-    a.textContent = h.textContent.trim();
+  // Go deeper (create nested ul)
+  while (level > currentLevel) {
+    const newUl = document.createElement('ul');
+    const lastLi = currentList.lastElementChild;
+    if (lastLi) lastLi.appendChild(newUl);
+    currentList = newUl;
+    currentLevel++;
+  }
 
-    li.appendChild(a);
-    ul.appendChild(li);
-  });
+  // Go up levels
+  while (level < currentLevel) {
+    currentList = currentList.parentElement.closest('ul');
+    currentLevel--;
+  }
 
-  toc.appendChild(ul);
+  const li = document.createElement('li');
+  const a = document.createElement('a');
+  a.href = '#' + h.id;
+  a.textContent = h.textContent.trim();
 
+  li.appendChild(a);
+  currentList.appendChild(li);
+});
+
+toc.appendChild(root);
   // ─── TOC link click handler – smooth scroll to center ───
   toc.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', function (e) {

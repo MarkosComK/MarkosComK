@@ -8,6 +8,8 @@
 }
 
 .SideLeft {
+position: sticky;
+top: 6rem;
   > *:nth-child(1) {
     display: flex;
     align-items: center;

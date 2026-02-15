@@ -9,7 +9,7 @@
     "SideLeft Main Main Main sideRight"
     "SideLeft Main Main Main sideRight"
     "SideLeft Main Main Main sideRight";
-  height: 100vh;
+  height: 100%;
   width: 100%;
   max-width: 1560px;
   margin-right: auto;
@@ -21,14 +21,12 @@
   margin-top: 6rem;
   padding: 0 2rem;
   border-right: 1px solid var(--border);
+  border-left: 1px solid var(--border);
 }
 .SideLeft {
-  grid-area: SideLeft;
   margin-top: 6rem;
-  border-right: 1px solid var(--border);
 }
 .sideRight{
-  grid-area: sideRight;
   margin-top: 6rem;
   padding: 0 2rem;
 }
