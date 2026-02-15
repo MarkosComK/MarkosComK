@@ -1,0 +1,18 @@
+.Main {
+  boder: 2px solid red;
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    text-style: none;
+    & p {
+      margin: 0;
+    }
+    & a {
+      text-decoration: none;
+      color: var(--text-link);
+    }
+  }
+}
