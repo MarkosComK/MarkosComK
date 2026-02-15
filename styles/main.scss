@@ -10,6 +10,10 @@
   --font-code:   'JetBrains Mono', 'Consolas', 'Monaco', 'Courier New', monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-serif-news);
   font-weight: 400;
@@ -22,6 +26,10 @@ h1, h2, h3, .headline, .newspaper-title {
   font-weight: 700;
   letter-spacing: -0.015em;
   text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  scroll-margin-top: 40px;     /* exactly what you want: 30px space above heading when scrolled to */
 }
 
 .byline, .date, figcaption {

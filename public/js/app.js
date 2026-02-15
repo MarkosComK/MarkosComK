@@ -26,69 +26,89 @@ document.addEventListener('DOMContentLoaded', () => {
   // ────────────────────────────────────────────────
   // TOC generation function (called on load + after SPA changes)
   // ────────────────────────────────────────────────
-  function buildTOC() {
-    const toc = document.getElementById('toc');
-    if (!toc) return;
+function buildTOC() {
+  const toc = document.getElementById('toc');
+  if (!toc) return;
 
-    // Clear previous TOC
-    toc.innerHTML = '';
+  const main = document.querySelector('.Main');
+  if (!main) return;
 
-    // Only look inside .Main
-    const headings = mainContainer.querySelectorAll('h1, h2, h3, h4, h5, h6');
+  toc.innerHTML = '';
 
-    if (headings.length === 0) {
-      toc.innerHTML = '<p style="color:#888;font-style:italic;">No headings in this note</p>';
-      return;
-    }
+  const headings = main.querySelectorAll('h1, h2, h3, h4, h5, h6');
 
-    const ul = document.createElement('ul');
-    ul.className = 'toc-list';
-
-    headings.forEach((h, i) => {
-      // Auto-generate clean ID if missing
-      if (!h.id) {
-        const text = h.textContent.trim();
-        h.id = 'toc-' + i + '-' + text
-          .toLowerCase()
-          .replace(/[^a-z0-9\s-]/gi, '')
-          .replace(/\s+/g, '-')
-          .replace(/-+/g, '-');
-      }
-
-      const level = parseInt(h.tagName[1]);
-      const li = document.createElement('li');
-      li.dataset.level = level;
-
-      const a = document.createElement('a');
-      a.href = '#' + h.id;
-      a.textContent = h.textContent.trim();
-
-      li.appendChild(a);
-      ul.appendChild(li);
-    });
-
-    toc.appendChild(ul);
-
-    // Highlight active heading on scroll
-    const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            document.querySelectorAll('#toc a').forEach(link => link.classList.remove('active'));
-            const activeLink = document.querySelector(`#toc a[href="#${entry.target.id}"]`);
-            if (activeLink) activeLink.classList.add('active');
-          }
-        });
-      },
-      { rootMargin: '-100px 0px -45% 0px', threshold: 0.1 }
-    );
-
-    headings.forEach(h => observer.observe(h));
+  if (headings.length === 0) {
+    toc.innerHTML = '<p style="color:#888;font-style:italic;">No headings</p>';
+    return;
   }
 
-  // Build TOC once on initial page load
-  buildTOC();
+  const ul = document.createElement('ul');
+  ul.className = 'toc-list';
 
+  headings.forEach((h, i) => {
+    if (!h.id) {
+      const text = h.textContent.trim();
+      h.id = 'toc-' + i + '-' + text
+        .toLowerCase()
+        .replace(/[^a-z0-9\s-]/gi, '')
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-');
+    }
+
+    const level = parseInt(h.tagName[1]);
+    const li = document.createElement('li');
+    li.dataset.level = level;
+
+    const a = document.createElement('a');
+    a.href = '#' + h.id;
+    a.textContent = h.textContent.trim();
+
+    li.appendChild(a);
+    ul.appendChild(li);
+  });
+
+  toc.appendChild(ul);
+
+  // ─── TOC link click handler – smooth scroll to center ───
+  toc.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const targetId = this.getAttribute('href').substring(1);
+      const target = document.getElementById(targetId);
+
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',        // centers heading in viewport
+          inline: 'nearest'
+        });
+
+        // Update hash in URL without jump
+        history.replaceState(null, null, '#' + targetId);
+      }
+    });
+  });
+
+  // Active highlight observer
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          document.querySelectorAll('#toc a').forEach(l => l.classList.remove('active'));
+          const active = document.querySelector(`#toc a[href="#${entry.target.id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    },
+    { rootMargin: '-100px 0px -45% 0px', threshold: 0.1 }
+  );
+
+  headings.forEach(h => observer.observe(h));
+}
+
+buildTOC();
   // ────────────────────────────────────────────────
   // SPA-like navigation: intercept internal .html links
   // ────────────────────────────────────────────────
