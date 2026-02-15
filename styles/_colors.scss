@@ -1,0 +1,28 @@
+:root {
+  //color-scheme: light dark;   // tells browser we support both + enables light-dark()
+
+  // Light theme (default)
+  --bg-main:       #e8d9c0;
+  --border:       #333333;
+  --text-hover:       #E0DFDD;
+  --text-primary:     #0f0f0f;
+  --text-secondary:   #6b7280;
+  --text-disabled:    #9ca3af;
+}
+
+// Optional: explicit dark class (for manual toggle)
+/*
+.dark {
+  --color-background:       #0f0f17;
+  --color-surface:          #171725;
+  --color-surface-hover:    #1e1e38;
+  --color-text-primary:     #f1f5f9;
+  --color-text-secondary:   #94a3b8;
+  --color-text-disabled:    #64748b;
+  --color-border:           #334155;
+  --color-primary:          #818cf8;     // indigo-400 – usually lighter in dark mode
+  --color-primary-hover:    #a5b4fc;
+  --color-danger:           #f87171;
+  --color-success:          #34d399;
+}
+*/

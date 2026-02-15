@@ -1,19 +1,31 @@
+
 .folder-toggle {
   cursor: pointer;
   text-align: left;
   &:hover {
-    background: rgba(100, 150, 255, 0.08);
+    background: var(--text-hover);
   }
 }
 
 .SideLeft {
+  > *:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin: 0 16px;
+    h3,p {
+      margin: 0.5rem 0;
+    }
+  }
   > *:nth-child(2) {
-    padding: 0 4rem;
+    padding: 0 2rem;
   }
 }
 .sidebar-tree {
   list-style: none;
-  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+  font-family: var(--font-code);
   font-size: 0.95rem;
   ul {
         padding-inline-start: 6px;
@@ -33,7 +45,7 @@
   }
   & .file-item {
     &:hover {
-      background: rgba(100, 150, 255, 0.08);
+      background: var(--text-hover);
     }
   }
 }
